@@ -61,6 +61,7 @@ class Content extends BaseType
 
     /**
      * @param string $CountryOfOrigin
+     *
      * @return Content
      */
     public function setCountryOfOrigin($CountryOfOrigin)
@@ -79,6 +80,7 @@ class Content extends BaseType
 
     /**
      * @param string $Description
+     *
      * @return Content
      */
     public function setDescription($Description)
@@ -97,6 +99,7 @@ class Content extends BaseType
 
     /**
      * @param string $HSTariffNr
+     *
      * @return Content
      */
     public function setHSTariffNr($HSTariffNr)
@@ -115,6 +118,7 @@ class Content extends BaseType
 
     /**
      * @param string $Quantity
+     *
      * @return Content
      */
     public function setQuantity($Quantity)
@@ -133,6 +137,7 @@ class Content extends BaseType
 
     /**
      * @param string $Value
+     *
      * @return Content
      */
     public function setValue($Value)
@@ -151,6 +156,7 @@ class Content extends BaseType
 
     /**
      * @param string $Weight
+     *
      * @return Content
      */
     public function setWeight($Weight)

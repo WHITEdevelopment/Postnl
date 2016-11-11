@@ -36,6 +36,7 @@ class GenerateBarcodeCustomer extends BaseType
 
     /**
      * @param string $CustomerCode
+     *
      * @return GenerateBarcodeCustomer
      */
     public function setCustomerCode($CustomerCode)
@@ -54,6 +55,7 @@ class GenerateBarcodeCustomer extends BaseType
 
     /**
      * @param string $CustomerNumber
+     *
      * @return GenerateBarcodeCustomer
      */
     public function setCustomerNumber($CustomerNumber)

@@ -19,9 +19,9 @@ class GetLocationsInAreaRequest extends BaseType
     protected $Message = null;
 
     /**
-     * @param $Countrycode
+     * @param              $Countrycode
      * @param LocationArea $Location
-     * @param Message $Message
+     * @param Message      $Message
      */
     public function __construct($Countrycode, LocationArea $Location, Message $Message)
     {
@@ -40,6 +40,7 @@ class GetLocationsInAreaRequest extends BaseType
 
     /**
      * @param string $Countrycode
+     *
      * @return GetLocationsInAreaRequest
      */
     public function setCountrycode($Countrycode)
@@ -58,6 +59,7 @@ class GetLocationsInAreaRequest extends BaseType
 
     /**
      * @param LocationArea $Location
+     *
      * @return GetLocationsInAreaRequest
      */
     public function setLocation($Location)
@@ -76,6 +78,7 @@ class GetLocationsInAreaRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GetLocationsInAreaRequest
      */
     public function setMessage($Message)

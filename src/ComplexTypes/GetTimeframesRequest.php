@@ -14,7 +14,7 @@ class GetTimeframesRequest extends BaseType
     protected $Timeframe = null;
 
     /**
-     * @param Message $Message
+     * @param Message          $Message
      * @param TimeframeRequest $Timeframe
      */
     public function __construct(Message $Message, TimeframeRequest $Timeframe)

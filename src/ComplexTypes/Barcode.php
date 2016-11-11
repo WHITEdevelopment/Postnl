@@ -43,6 +43,7 @@ class Barcode extends BaseType
 
     /**
      * @param string $Type
+     *
      * @return Barcode
      */
     public function setType($Type)
@@ -61,6 +62,7 @@ class Barcode extends BaseType
 
     /**
      * @param string $Range
+     *
      * @return Barcode
      */
     public function setRange($Range)
@@ -79,6 +81,7 @@ class Barcode extends BaseType
 
     /**
      * @param string $Serie
+     *
      * @return Barcode
      */
     public function setSerie($Serie)

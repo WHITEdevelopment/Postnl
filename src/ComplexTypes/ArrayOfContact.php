@@ -31,6 +31,7 @@ class ArrayOfContact extends BaseArrayOfType
 
     /**
      * @param Contact[] $Contact
+     *
      * @return ArrayOfContact
      */
     public function setContact(array $Contact)

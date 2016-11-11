@@ -31,6 +31,7 @@ class ArrayOfResponseAmount extends BaseArrayOfType
 
     /**
      * @param ResponseAmount[] $ResponseAmount
+     *
      * @return ArrayOfResponseAmount
      */
     public function setResponseAmount(array $ResponseAmount)

@@ -10,6 +10,7 @@ class ArrayOfExceptionData extends BaseType
 
     /**
      * @param ExceptionData[] $ExceptionData
+     *
      * @return ArrayOfExceptionData
      */
     public function __construct(array $ExceptionData)
@@ -27,6 +28,7 @@ class ArrayOfExceptionData extends BaseType
 
     /**
      * @param ExceptionData[] $ExceptionData
+     *
      * @return ArrayOfExceptionData
      */
     public function setExceptionData(array $ExceptionData)

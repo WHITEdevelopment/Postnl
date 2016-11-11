@@ -31,6 +31,7 @@ class ArrayOfProductOption extends BaseArrayOfType
 
     /**
      * @param ProductOption[] $ProductOption
+     *
      * @return ArrayOfProductOption
      */
     public function setProductOption(array $ProductOption)

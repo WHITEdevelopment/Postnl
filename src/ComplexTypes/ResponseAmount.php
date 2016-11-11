@@ -75,6 +75,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $AccountName
+     *
      * @return ResponseAmount
      */
     public function setAccountName($AccountName)
@@ -93,6 +94,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $AccountNr
+     *
      * @return ResponseAmount
      */
     public function setAccountNr($AccountNr)
@@ -111,6 +113,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $AmountType
+     *
      * @return ResponseAmount
      */
     public function setAmountType($AmountType)
@@ -129,6 +132,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $Currency
+     *
      * @return ResponseAmount
      */
     public function setCurrency($Currency)
@@ -147,6 +151,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $Reference
+     *
      * @return ResponseAmount
      */
     public function setReference($Reference)
@@ -165,6 +170,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $TransactionNumber
+     *
      * @return ResponseAmount
      */
     public function setTransactionNumber($TransactionNumber)
@@ -183,6 +189,7 @@ class ResponseAmount extends BaseType
 
     /**
      * @param string $Value
+     *
      * @return ResponseAmount
      */
     public function setValue($Value)

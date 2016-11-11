@@ -66,18 +66,18 @@ class CurrentStatusResponseShipment extends BaseType
     protected $Warnings = null;
 
     /**
-     * @param ArrayOfResponseAddress $Addresses
-     * @param ArrayOfResponseAmount $Amounts
-     * @param string $Barcode
-     * @param DateTime $DeliveryDate
-     * @param ResponseDimension $Dimension
-     * @param ResponseExpectation $Expectation
-     * @param ArrayOfResponseGroup $Groups
-     * @param string $ProductCode
+     * @param ArrayOfResponseAddress       $Addresses
+     * @param ArrayOfResponseAmount        $Amounts
+     * @param string                       $Barcode
+     * @param DateTime                     $DeliveryDate
+     * @param ResponseDimension            $Dimension
+     * @param ResponseExpectation          $Expectation
+     * @param ArrayOfResponseGroup         $Groups
+     * @param string                       $ProductCode
      * @param ArrayOfResponseProductOption $ProductOptions
-     * @param string $Reference
-     * @param ResponseStatus $Status
-     * @param ArrayOfWarning $Warnings
+     * @param string                       $Reference
+     * @param ResponseStatus               $Status
+     * @param ArrayOfWarning               $Warnings
      */
     public function __construct(
         ArrayOfResponseAddress $Addresses,
@@ -117,6 +117,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseAddress $Addresses
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setAddresses($Addresses)
@@ -135,6 +136,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseAmount $Amounts
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setAmounts($Amounts)
@@ -153,6 +155,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setBarcode($Barcode)
@@ -171,6 +174,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param DateTime $DeliveryDate
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setDeliveryDate(DateTime $DeliveryDate)
@@ -189,6 +193,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseDimension $Dimension
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setDimension($Dimension)
@@ -207,6 +212,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseExpectation $Expectation
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setExpectation($Expectation)
@@ -225,6 +231,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseGroup $Groups
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setGroups($Groups)
@@ -243,6 +250,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param string $ProductCode
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setProductCode($ProductCode)
@@ -261,6 +269,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseProductOption $ProductOptions
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setProductOptions($ProductOptions)
@@ -279,6 +288,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param string $Reference
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setReference($Reference)
@@ -297,6 +307,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseStatus $Status
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setStatus($Status)
@@ -315,6 +326,7 @@ class CurrentStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return CurrentStatusResponseShipment
      */
     public function setWarnings($Warnings)

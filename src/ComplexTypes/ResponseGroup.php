@@ -51,6 +51,7 @@ class ResponseGroup extends BaseType
 
     /**
      * @param string $GroupType
+     *
      * @return ResponseGroup
      */
     public function setGroupType($GroupType)
@@ -69,6 +70,7 @@ class ResponseGroup extends BaseType
 
     /**
      * @param string $MainBarcode
+     *
      * @return ResponseGroup
      */
     public function setMainBarcode($MainBarcode)
@@ -87,6 +89,7 @@ class ResponseGroup extends BaseType
 
     /**
      * @param string $ShipmentAmount
+     *
      * @return ResponseGroup
      */
     public function setShipmentAmount($ShipmentAmount)
@@ -105,6 +108,7 @@ class ResponseGroup extends BaseType
 
     /**
      * @param string $ShipmentCounter
+     *
      * @return ResponseGroup
      */
     public function setShipmentCounter($ShipmentCounter)

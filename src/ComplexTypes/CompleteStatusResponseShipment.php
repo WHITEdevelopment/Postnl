@@ -86,22 +86,22 @@ class CompleteStatusResponseShipment extends BaseType
     protected $Warnings = null;
 
     /**
-     * @param ArrayOfResponseAddress $Addresses
-     * @param ArrayOfResponseAmount $Amounts
-     * @param string $Barcode
-     * @param ResponseCustomer $Customer
-     * @param DateTime $DeliveryDate
-     * @param ResponseDimension $Dimension
-     * @param ArrayOfCompleteStatusResponseEvent $Events
-     * @param ResponseExpectation $Expectation
-     * @param ArrayOfResponseGroup $Groups
+     * @param ArrayOfResponseAddress                 $Addresses
+     * @param ArrayOfResponseAmount                  $Amounts
+     * @param string                                 $Barcode
+     * @param ResponseCustomer                       $Customer
+     * @param DateTime                               $DeliveryDate
+     * @param ResponseDimension                      $Dimension
+     * @param ArrayOfCompleteStatusResponseEvent     $Events
+     * @param ResponseExpectation                    $Expectation
+     * @param ArrayOfResponseGroup                   $Groups
      * @param ArrayOfCompleteStatusResponseOldStatus $OldStatuses
-     * @param string $ProductCode
-     * @param string $ProductDescription
-     * @param ArrayOfResponseProductOption $ProductOptions
-     * @param string $Reference
-     * @param ResponseStatus $Status
-     * @param ArrayOfWarning $Warnings
+     * @param string                                 $ProductCode
+     * @param string                                 $ProductDescription
+     * @param ArrayOfResponseProductOption           $ProductOptions
+     * @param string                                 $Reference
+     * @param ResponseStatus                         $Status
+     * @param ArrayOfWarning                         $Warnings
      */
     public function __construct(
         ArrayOfResponseAddress $Addresses,
@@ -149,6 +149,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseAddress $Addresses
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setAddresses($Addresses)
@@ -167,6 +168,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseAmount $Amounts
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setAmounts($Amounts)
@@ -185,6 +187,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setBarcode($Barcode)
@@ -203,6 +206,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseCustomer $Customer
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setCustomer($Customer)
@@ -221,6 +225,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param DateTime $DeliveryDate
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setDeliveryDate(DateTime $DeliveryDate)
@@ -239,6 +244,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseDimension $Dimension
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setDimension($Dimension)
@@ -257,6 +263,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfCompleteStatusResponseEvent $Events
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setEvents($Events)
@@ -275,6 +282,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseExpectation $Expectation
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setExpectation($Expectation)
@@ -293,6 +301,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseGroup $Groups
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setGroups($Groups)
@@ -311,6 +320,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfCompleteStatusResponseOldStatus $OldStatuses
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setOldStatuses($OldStatuses)
@@ -329,6 +339,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param string $ProductCode
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setProductCode($ProductCode)
@@ -347,6 +358,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param string $ProductDescription
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setProductDescription($ProductDescription)
@@ -365,6 +377,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfResponseProductOption $ProductOptions
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setProductOptions($ProductOptions)
@@ -383,6 +396,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param string $Reference
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setReference($Reference)
@@ -401,6 +415,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ResponseStatus $Status
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setStatus($Status)
@@ -419,6 +434,7 @@ class CompleteStatusResponseShipment extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return CompleteStatusResponseShipment
      */
     public function setWarnings($Warnings)

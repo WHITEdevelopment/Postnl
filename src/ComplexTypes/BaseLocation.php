@@ -31,13 +31,14 @@ class BaseLocation extends BaseType
     /**
      * @param string $AllowSundaySorting
      * @param string $DeliveryDate
-     * @param array $DeliveryOptions
-     * @param array $Options
+     * @param array  $DeliveryOptions
+     * @param array  $Options
      */
     public function __construct($AllowSundaySorting, $DeliveryDate, $DeliveryOptions, $Options)
     {
+        $nextMonday = new \DateTime('next monday');
         $this->setAllowSundaySorting($AllowSundaySorting);
-        $this->setDeliveryDate($DeliveryDate ?: (new \DateTime('next monday'))->format('d-m-Y'));
+        $this->setDeliveryDate($DeliveryDate ?: $nextMonday->format('d-m-Y'));
         $this->setDeliveryOptions($DeliveryOptions);
         $this->setOptions($Options);
     }
@@ -52,6 +53,7 @@ class BaseLocation extends BaseType
 
     /**
      * @param string $AllowSundaySorting
+     *
      * @return $this
      */
     public function setAllowSundaySorting($AllowSundaySorting)
@@ -70,6 +72,7 @@ class BaseLocation extends BaseType
 
     /**
      * @param string $DeliveryDate
+     *
      * @return $this
      */
     public function setDeliveryDate($DeliveryDate)
@@ -88,6 +91,7 @@ class BaseLocation extends BaseType
 
     /**
      * @param string[] $DeliveryOptions
+     *
      * @return $this
      */
     public function setDeliveryOptions($DeliveryOptions)
@@ -106,6 +110,7 @@ class BaseLocation extends BaseType
 
     /**
      * @param string $OpeningTime
+     *
      * @return $this
      */
     public function setOpeningTime($OpeningTime)
@@ -124,6 +129,7 @@ class BaseLocation extends BaseType
 
     /**
      * @param string[] $Options
+     *
      * @return $this
      */
     public function setOptions($Options)

@@ -31,6 +31,7 @@ class ArrayOfGetSignatureResponseSignature extends BaseArrayOfType
 
     /**
      * @param GetSignatureResponseSignature[] $GetSignatureResponseSignature
+     *
      * @return ArrayOfGetSignatureResponseSignature
      */
     public function setGetSignatureResponseSignature(array $GetSignatureResponseSignature)

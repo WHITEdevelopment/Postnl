@@ -83,6 +83,7 @@ class Amount extends BaseType
 
     /**
      * @param string $AccountName
+     *
      * @return Amount
      */
     public function setAccountName($AccountName)
@@ -101,6 +102,7 @@ class Amount extends BaseType
 
     /**
      * @param string $AmountType
+     *
      * @return Amount
      */
     public function setAmountType($AmountType)
@@ -119,6 +121,7 @@ class Amount extends BaseType
 
     /**
      * @param string $BIC
+     *
      * @return Amount
      */
     public function setBIC($BIC)
@@ -137,6 +140,7 @@ class Amount extends BaseType
 
     /**
      * @param string $Currency
+     *
      * @return Amount
      */
     public function setCurrency($Currency)
@@ -155,6 +159,7 @@ class Amount extends BaseType
 
     /**
      * @param string $IBAN
+     *
      * @return Amount
      */
     public function setIBAN($IBAN)
@@ -173,6 +178,7 @@ class Amount extends BaseType
 
     /**
      * @param string $Reference
+     *
      * @return Amount
      */
     public function setReference($Reference)
@@ -191,6 +197,7 @@ class Amount extends BaseType
 
     /**
      * @param string $TransactionNumber
+     *
      * @return Amount
      */
     public function setTransactionNumber($TransactionNumber)
@@ -209,6 +216,7 @@ class Amount extends BaseType
 
     /**
      * @param string $Value
+     *
      * @return Amount
      */
     public function setValue($Value)

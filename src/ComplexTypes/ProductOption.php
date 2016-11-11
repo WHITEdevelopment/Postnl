@@ -33,6 +33,7 @@ class ProductOption extends BaseType
 
     /**
      * @param string $Characteristic
+     *
      * @return ProductOption
      */
     public function setCharacteristic($Characteristic)
@@ -51,6 +52,7 @@ class ProductOption extends BaseType
 
     /**
      * @param string $Option
+     *
      * @return ProductOption
      */
     public function setOption($Option)

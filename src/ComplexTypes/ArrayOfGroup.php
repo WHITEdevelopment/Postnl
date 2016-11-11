@@ -31,6 +31,7 @@ class ArrayOfGroup extends BaseArrayOfType
 
     /**
      * @param Group[] $Group
+     *
      * @return ArrayOfGroup
      */
     public function setGroup(array $Group)

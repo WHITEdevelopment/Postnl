@@ -17,6 +17,7 @@ abstract class BaseArrayOfType extends BaseType implements IteratorAggregate, Ar
 
     /**
      * Implements IteratorAggregate::getIterator().
+     *
      * @return ArrayIterator
      */
     public function getIterator()
@@ -29,7 +30,8 @@ abstract class BaseArrayOfType extends BaseType implements IteratorAggregate, Ar
      */
     public function offsetExists($offset)
     {
-        return isset($this->getWrappedProperty()[$offset]);
+        $wrappedProperty = $this->getWrappedProperty();
+        return isset($wrappedProperty[$offset]);
     }
 
     /**
@@ -37,7 +39,8 @@ abstract class BaseArrayOfType extends BaseType implements IteratorAggregate, Ar
      */
     public function offsetGet($offset)
     {
-        return $this->offsetExists($offset) ? $this->getWrappedProperty()[$offset] : null;
+        $wrappedProperty = $this->getWrappedProperty();
+        return $this->offsetExists($offset) ? $wrappedProperty[$offset] : null;
     }
 
     /**
@@ -63,6 +66,6 @@ abstract class BaseArrayOfType extends BaseType implements IteratorAggregate, Ar
     {
         // When created by the SOAP stack, the property may not be an array.
         $property = $this->{static::WRAPPED_PROPERTY};
-        return is_array($property) ? $property : [$property];
+        return is_array($property) ? $property : array($property);
     }
 }

@@ -22,7 +22,7 @@ class TimeframeTimeFrame extends BaseType
     /**
      * @param string $From
      * @param string $To
-     * @param array $Options
+     * @param array  $Options
      */
     public function __construct($From, $To, array $Options)
     {
@@ -41,6 +41,7 @@ class TimeframeTimeFrame extends BaseType
 
     /**
      * @param string $From
+     *
      * @return TimeframeTimeFrame
      */
     public function setFrom($From)
@@ -59,6 +60,7 @@ class TimeframeTimeFrame extends BaseType
 
     /**
      * @param string[] $Options
+     *
      * @return TimeframeTimeFrame
      */
     public function setOptions(array $Options)
@@ -77,6 +79,7 @@ class TimeframeTimeFrame extends BaseType
 
     /**
      * @param string $To
+     *
      * @return TimeframeTimeFrame
      */
     public function setTo($To)

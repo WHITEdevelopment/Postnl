@@ -40,6 +40,7 @@ class RequestShipmentStatus extends BaseType
 
     /**
      * @param string $StatusCode
+     *
      * @return RequestShipmentStatus
      */
     public function setStatusCode($StatusCode)
@@ -58,6 +59,7 @@ class RequestShipmentStatus extends BaseType
 
     /**
      * @param string $DateFrom
+     *
      * @return RequestShipmentStatus
      */
     public function setDateFrom($DateFrom)
@@ -76,6 +78,7 @@ class RequestShipmentStatus extends BaseType
 
     /**
      * @param string $DateTo
+     *
      * @return RequestShipmentStatus
      */
     public function setDateTo($DateTo)

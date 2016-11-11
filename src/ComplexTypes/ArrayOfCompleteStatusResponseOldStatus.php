@@ -31,6 +31,7 @@ class ArrayOfCompleteStatusResponseOldStatus extends BaseArrayOfType
 
     /**
      * @param CompleteStatusResponseOldStatus[] $CompleteStatusResponseOldStatus
+     *
      * @return ArrayOfCompleteStatusResponseOldStatus
      */
     public function setCompleteStatusResponseOldStatus(array $CompleteStatusResponseOldStatus)

@@ -24,20 +24,22 @@ class BarcodeClient extends BaseClient
      * @var array $classes
      *     The complex types used by this client.
      */
-    protected $classes = [
-        'GenerateBarcodeMessage',
-        'Message',
-        'GenerateBarcodeCustomer',
-        'Barcode',
-        'GenerateBarcodeResponse',
-    ];
+    protected $classes
+        = array(
+            'GenerateBarcodeMessage',
+            'Message',
+            'GenerateBarcodeCustomer',
+            'Barcode',
+            'GenerateBarcodeResponse',
+        );
 
     /**
      * @param ComplexTypes\GenerateBarcodeMessage $GenerateBarcodeMessage
+     *
      * @return ComplexTypes\GenerateBarcodeResponse
      */
     public function generateBarcode(ComplexTypes\GenerateBarcodeMessage $GenerateBarcodeMessage)
     {
-        return $this->__soapCall('GenerateBarcode', [$GenerateBarcodeMessage]);
+        return $this->__soapCall('GenerateBarcode', array($GenerateBarcodeMessage));
     }
 }

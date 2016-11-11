@@ -26,6 +26,7 @@ class GetSentDateResponse extends BaseType
 
     /**
      * @param string $SentDate
+     *
      * @return GetSentDateResponse
      */
     public function setSentDate($SentDate)

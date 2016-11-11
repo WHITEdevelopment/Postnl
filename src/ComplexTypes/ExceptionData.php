@@ -32,6 +32,7 @@ class ExceptionData extends BaseType
 
     /**
      * @param string $Description
+     *
      * @return ExceptionData
      */
     public function setDescription($Description)
@@ -50,6 +51,7 @@ class ExceptionData extends BaseType
 
     /**
      * @param string $ErrorMsg
+     *
      * @return ExceptionData
      */
     public function setErrorMsg($ErrorMsg)
@@ -68,6 +70,7 @@ class ExceptionData extends BaseType
 
     /**
      * @param string $ErrorNumber
+     *
      * @return ExceptionData
      */
     public function setErrorNumber($ErrorNumber)

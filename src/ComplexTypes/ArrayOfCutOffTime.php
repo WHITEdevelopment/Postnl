@@ -31,6 +31,7 @@ class ArrayOfCutOffTime extends BaseArrayOfType
 
     /**
      * @param CutOffTime[] $CutOffTime
+     *
      * @return ArrayOfCutOffTime
      */
     public function setCutOffTime(array $CutOffTime)

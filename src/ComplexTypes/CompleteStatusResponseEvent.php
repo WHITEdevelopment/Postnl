@@ -75,6 +75,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $Code
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setCode($Code)
@@ -93,6 +94,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $Description
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setDescription($Description)
@@ -111,6 +113,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $DestinationLocationCode
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setDestinationLocationCode($DestinationLocationCode)
@@ -129,6 +132,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $LocationCode
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setLocationCode($LocationCode)
@@ -147,6 +151,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $RouteCode
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setRouteCode($RouteCode)
@@ -165,6 +170,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $RouteName
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setRouteName($RouteName)
@@ -183,6 +189,7 @@ class CompleteStatusResponseEvent extends BaseType
 
     /**
      * @param string $TimeStamp
+     *
      * @return CompleteStatusResponseEvent
      */
     public function setTimeStamp($TimeStamp)

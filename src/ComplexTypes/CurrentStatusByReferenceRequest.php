@@ -19,7 +19,7 @@ class CurrentStatusByReferenceRequest extends BaseType
     protected $Shipment = null;
 
     /**
-     * @param Message $Message
+     * @param Message         $Message
      * @param RequestCustomer $Customer
      * @param RequestShipment $Shipment
      */
@@ -43,6 +43,7 @@ class CurrentStatusByReferenceRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return CurrentStatusByReferenceRequest
      */
     public function setMessage($Message)
@@ -61,6 +62,7 @@ class CurrentStatusByReferenceRequest extends BaseType
 
     /**
      * @param RequestCustomer $Customer
+     *
      * @return CurrentStatusByReferenceRequest
      */
     public function setCustomer($Customer)
@@ -79,6 +81,7 @@ class CurrentStatusByReferenceRequest extends BaseType
 
     /**
      * @param RequestShipment $Shipment
+     *
      * @return CurrentStatusByReferenceRequest
      */
     public function setShipment($Shipment)

@@ -18,7 +18,7 @@ class GetNearestLocationsResponse extends BaseType
 
     /**
      * @param ArrayOfGetLocationsResult $NearestLocationsResult
-     * @param ArrayOfWarning $Warnings
+     * @param ArrayOfWarning            $Warnings
      */
     public function __construct(ArrayOfGetLocationsResult $NearestLocationsResult, ArrayOfWarning $Warnings)
     {
@@ -36,6 +36,7 @@ class GetNearestLocationsResponse extends BaseType
 
     /**
      * @param ArrayOfGetLocationsResult $NearestLocationsResult
+     *
      * @return GetNearestLocationsResponse
      */
     public function setNearestLocation($NearestLocationsResult)
@@ -54,6 +55,7 @@ class GetNearestLocationsResponse extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return GetSignatureResponse
      */
     public function setWarnings($Warnings)

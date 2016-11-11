@@ -33,6 +33,7 @@ class CutOffTime extends BaseType
 
     /**
      * @param string $Day
+     *
      * @return CutOffTime
      */
     public function setDay($Day)
@@ -51,6 +52,7 @@ class CutOffTime extends BaseType
 
     /**
      * @param string $Time
+     *
      * @return CutOffTime
      */
     public function setTime($Time)

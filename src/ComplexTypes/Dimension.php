@@ -60,6 +60,7 @@ class Dimension extends BaseType
 
     /**
      * @param string $Weight
+     *
      * @return Dimension
      */
     public function setWeight($Weight)
@@ -78,6 +79,7 @@ class Dimension extends BaseType
 
     /**
      * @param string $Height
+     *
      * @return Dimension
      */
     public function setHeight($Height)
@@ -96,6 +98,7 @@ class Dimension extends BaseType
 
     /**
      * @param string $Length
+     *
      * @return Dimension
      */
     public function setLength($Length)
@@ -114,6 +117,7 @@ class Dimension extends BaseType
 
     /**
      * @param string $Volume
+     *
      * @return Dimension
      */
     public function setVolume($Volume)
@@ -132,6 +136,7 @@ class Dimension extends BaseType
 
     /**
      * @param string $Width
+     *
      * @return Dimension
      */
     public function setWidth($Width)

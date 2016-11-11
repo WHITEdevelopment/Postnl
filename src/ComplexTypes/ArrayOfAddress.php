@@ -31,6 +31,7 @@ class ArrayOfAddress extends BaseArrayOfType
 
     /**
      * @param Address[] $Address
+     *
      * @return ArrayOfAddress
      */
     public function setAddress(array $Address)

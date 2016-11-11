@@ -31,6 +31,7 @@ class ArrayOfReasonNoTimeframe extends BaseArrayOfType
 
     /**
      * @param ReasonNoTimeframe[] $ReasonNoTimeframe
+     *
      * @return ArrayOfReasonNoTimeframe
      */
     public function setReasonNoTimeframe(array $ReasonNoTimeframe)

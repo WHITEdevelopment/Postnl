@@ -20,42 +20,45 @@ class LocationClient extends BaseClient
      * @var array $classes
      *     The complex types used by this client.
      */
-    protected $classes = [
-        'Address',
-        'ArrayOfExceptionData',
-        'ArrayOfResponseLocation',
-        'ArrayOfWarning',
-        'BaseLocation',
-        'CifException',
-        'Coordinate',
-        'ExceptionData',
-        'GetLocationRequest',
-        'GetLocationsInAreaRequest',
-        'GetLocationsResponse',
-        'GetNearestLocationsRequest',
-        'Location',
-        'LocationArea',
-        'Message',
-        'OpeningHours',
-        'ResponseLocation',
-        'Warning'
-    ];
+    protected $classes
+        = array(
+            'Address',
+            'ArrayOfExceptionData',
+            'ArrayOfResponseLocation',
+            'ArrayOfWarning',
+            'BaseLocation',
+            'CifException',
+            'Coordinate',
+            'ExceptionData',
+            'GetLocationRequest',
+            'GetLocationsInAreaRequest',
+            'GetLocationsResponse',
+            'GetNearestLocationsRequest',
+            'Location',
+            'LocationArea',
+            'Message',
+            'OpeningHours',
+            'ResponseLocation',
+            'Warning',
+        );
 
     /**
      * @param ComplexTypes\GetNearestLocationsRequest $getNearestLocations
+     *
      * @return ComplexTypes\GetLocationsResult
      */
     public function getNearestLocation(ComplexTypes\GetNearestLocationsRequest $getNearestLocations)
     {
-        return $this->__soapCall('GetNearestLocations', [$getNearestLocations]);
+        return $this->__soapCall('GetNearestLocations', array($getNearestLocations));
     }
 
     /**
      * @param ComplexTypes\GetLocationRequest $getLocations
+     *
      * @return ComplexTypes\GetLocationsResponse
      */
     public function getLocation(ComplexTypes\GetLocationRequest $getLocations)
     {
-        return $this->__soapCall('GetLocation', [$getLocations]);
+        return $this->__soapCall('GetLocation', array($getLocations));
     }
 }

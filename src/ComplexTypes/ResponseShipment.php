@@ -39,13 +39,13 @@ class ResponseShipment extends BaseType
     protected $Warnings = null;
 
     /**
-    * @param string $Barcode
-    * @param string $DownPartnerBarcode
-    * @param string $DownPartnerID
-    * @param string $DownPartnerLocation
-    * @param ArrayOfLabel $Labels
-    * @param string $ProductCodeDelivery
-    * @param ArrayOfWarning $Warnings
+     * @param string         $Barcode
+     * @param string         $DownPartnerBarcode
+     * @param string         $DownPartnerID
+     * @param string         $DownPartnerLocation
+     * @param ArrayOfLabel   $Labels
+     * @param string         $ProductCodeDelivery
+     * @param ArrayOfWarning $Warnings
      */
     public function __construct(
         $Barcode,
@@ -75,6 +75,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return ResponseShipment
      */
     public function setBarcode($Barcode)
@@ -93,6 +94,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param string $DownPartnerBarcode
+     *
      * @return ResponseShipment
      */
     public function setDownPartnerBarcode($DownPartnerBarcode)
@@ -111,6 +113,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param string $DownPartnerID
+     *
      * @return ResponseShipment
      */
     public function setDownPartnerID($DownPartnerID)
@@ -129,6 +132,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param string $DownPartnerLocation
+     *
      * @return ResponseShipment
      */
     public function setDownPartnerLocation($DownPartnerLocation)
@@ -147,6 +151,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param ArrayOfLabel $Labels
+     *
      * @return ResponseShipment
      */
     public function setLabels($Labels)
@@ -165,6 +170,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param string $ProductCodeDelivery
+     *
      * @return ResponseShipment
      */
     public function setProductCodeDelivery($ProductCodeDelivery)
@@ -183,6 +189,7 @@ class ResponseShipment extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return ResponseShipment
      */
     public function setWarnings($Warnings)

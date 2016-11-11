@@ -19,7 +19,7 @@ class CurrentStatusRequest extends BaseType
     protected $Shipment = null;
 
     /**
-     * @param Message $Message
+     * @param Message         $Message
      * @param RequestCustomer $Customer
      * @param RequestShipment $Shipment
      */
@@ -43,6 +43,7 @@ class CurrentStatusRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return CurrentStatusRequest
      */
     public function setMessage($Message)
@@ -61,6 +62,7 @@ class CurrentStatusRequest extends BaseType
 
     /**
      * @param RequestCustomer $Customer
+     *
      * @return CurrentStatusRequest
      */
     public function setCustomer($Customer)
@@ -79,6 +81,7 @@ class CurrentStatusRequest extends BaseType
 
     /**
      * @param RequestShipment $Shipment
+     *
      * @return CurrentStatusRequest
      */
     public function setShipment($Shipment)

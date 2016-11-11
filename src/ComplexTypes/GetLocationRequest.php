@@ -19,9 +19,9 @@ class GetLocationRequest extends BaseType
     protected $RetailNetworkID = null;
 
     /**
-     * @param string $LocationCode
+     * @param string  $LocationCode
      * @param Message $Message
-     * @param string $RetailNetworkID
+     * @param string  $RetailNetworkID
      */
     public function __construct($LocationCode, Message $Message, $RetailNetworkID)
     {
@@ -40,6 +40,7 @@ class GetLocationRequest extends BaseType
 
     /**
      * @param string $LocationCode
+     *
      * @return GetLocationRequest
      */
     public function setLocationCode($LocationCode)
@@ -58,6 +59,7 @@ class GetLocationRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GetLocationRequest
      */
     public function setMessage($Message)
@@ -76,6 +78,7 @@ class GetLocationRequest extends BaseType
 
     /**
      * @param string $RetailNetworkID
+     *
      * @return GetLocationRequest
      */
     public function setRetailNetworkID($RetailNetworkID)

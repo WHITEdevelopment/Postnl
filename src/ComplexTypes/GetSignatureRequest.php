@@ -19,8 +19,8 @@ class GetSignatureRequest extends BaseType
     protected $Shipment = null;
 
     /**
-     * @param Message $Message
-     * @param RequestCustomer $Customer
+     * @param Message          $Message
+     * @param RequestCustomer  $Customer
      * @param RequestSignature $Shipment
      */
     public function __construct(
@@ -43,6 +43,7 @@ class GetSignatureRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GetSignatureRequest
      */
     public function setMessage(Message $Message)
@@ -61,6 +62,7 @@ class GetSignatureRequest extends BaseType
 
     /**
      * @param RequestCustomer $Customer
+     *
      * @return GetSignatureRequest
      */
     public function setCustomer(RequestCustomer $Customer)
@@ -79,6 +81,7 @@ class GetSignatureRequest extends BaseType
 
     /**
      * @param RequestSignature $Shipment
+     *
      * @return GetSignatureRequest
      */
     public function setShipment(RequestSignature $Shipment)

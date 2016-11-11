@@ -40,6 +40,7 @@ class RequestShipmentPhase extends BaseType
 
     /**
      * @param string $PhaseCode
+     *
      * @return RequestShipmentPhase
      */
     public function setPhaseCode($PhaseCode)
@@ -58,6 +59,7 @@ class RequestShipmentPhase extends BaseType
 
     /**
      * @param string $DateFrom
+     *
      * @return RequestShipmentPhase
      */
     public function setDateFrom($DateFrom)
@@ -76,6 +78,7 @@ class RequestShipmentPhase extends BaseType
 
     /**
      * @param string $DateTo
+     *
      * @return RequestShipmentPhase
      */
     public function setDateTo($DateTo)

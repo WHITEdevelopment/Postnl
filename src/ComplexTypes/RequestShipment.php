@@ -42,6 +42,7 @@ class RequestShipment extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return RequestShipment
      */
     public function setBarcode($Barcode)
@@ -60,6 +61,7 @@ class RequestShipment extends BaseType
 
     /**
      * @param string $Reference
+     *
      * @return RequestShipment
      */
     public function setReference($Reference)
@@ -78,6 +80,7 @@ class RequestShipment extends BaseType
 
     /**
      * @param string $Zipcode
+     *
      * @return RequestShipment
      */
     public function setZipcode($Zipcode)

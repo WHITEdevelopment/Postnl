@@ -163,6 +163,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $AddressType
+     *
      * @return ResponseAddress
      */
     public function setAddressType($AddressType)
@@ -181,6 +182,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $Building
+     *
      * @return ResponseAddress
      */
     public function setBuilding($Building)
@@ -199,6 +201,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $City
+     *
      * @return ResponseAddress
      */
     public function setCity($City)
@@ -217,6 +220,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $CompanyName
+     *
      * @return ResponseAddress
      */
     public function setCompanyName($CompanyName)
@@ -235,6 +239,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $CountryCode
+     *
      * @return ResponseAddress
      */
     public function setCountryCode($CountryCode)
@@ -253,6 +258,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $DepartmentName
+     *
      * @return ResponseAddress
      */
     public function setDepartmentName($DepartmentName)
@@ -271,6 +277,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $District
+     *
      * @return ResponseAddress
      */
     public function setDistrict($District)
@@ -289,6 +296,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $DoorCode
+     *
      * @return ResponseAddress
      */
     public function setDoorCode($DoorCode)
@@ -307,6 +315,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $FirstName
+     *
      * @return ResponseAddress
      */
     public function setFirstName($FirstName)
@@ -325,6 +334,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $Floor
+     *
      * @return ResponseAddress
      */
     public function setFloor($Floor)
@@ -343,6 +353,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $HouseNumber
+     *
      * @return ResponseAddress
      */
     public function setHouseNumber($HouseNumber)
@@ -361,6 +372,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $HouseNumberSuffix
+     *
      * @return ResponseAddress
      */
     public function setHouseNumberSuffix($HouseNumberSuffix)
@@ -379,6 +391,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $LastName
+     *
      * @return ResponseAddress
      */
     public function setLastName($LastName)
@@ -397,6 +410,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $Region
+     *
      * @return ResponseAddress
      */
     public function setRegion($Region)
@@ -415,6 +429,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $RegistrationDate
+     *
      * @return ResponseAddress
      */
     public function setRegistrationDate($RegistrationDate)
@@ -433,6 +448,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $Remark
+     *
      * @return ResponseAddress
      */
     public function setRemark($Remark)
@@ -451,6 +467,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $Street
+     *
      * @return ResponseAddress
      */
     public function setStreet($Street)
@@ -469,6 +486,7 @@ class ResponseAddress extends BaseType
 
     /**
      * @param string $Zipcode
+     *
      * @return ResponseAddress
      */
     public function setZipcode($Zipcode)

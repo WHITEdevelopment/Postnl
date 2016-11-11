@@ -25,9 +25,9 @@ class GenerateLabelRequest extends BaseType
 
     /**
      * @param LabellingMessage $Message
-     * @param Customer $Customer
-     * @param ArrayOfShipment $Shipments
-     * @param base64Binary $LabelSignature
+     * @param Customer         $Customer
+     * @param ArrayOfShipment  $Shipments
+     * @param base64Binary     $LabelSignature
      */
     public function __construct(
         LabellingMessage $Message,
@@ -51,6 +51,7 @@ class GenerateLabelRequest extends BaseType
 
     /**
      * @param LabellingMessage $Message
+     *
      * @return GenerateLabelRequest
      */
     public function setMessage(LabellingMessage $Message)
@@ -69,6 +70,7 @@ class GenerateLabelRequest extends BaseType
 
     /**
      * @param Customer $Customer
+     *
      * @return GenerateLabelRequest
      */
     public function setCustomer(Customer $Customer)
@@ -87,6 +89,7 @@ class GenerateLabelRequest extends BaseType
 
     /**
      * @param ArrayOfShipment $Shipments
+     *
      * @return GenerateLabelRequest
      */
     public function setShipments(ArrayOfShipment $Shipments)
@@ -105,6 +108,7 @@ class GenerateLabelRequest extends BaseType
 
     /**
      * @param base64Binary $LabelSignature
+     *
      * @return GenerateLabelRequest
      */
     public function setLabelSignature($LabelSignature)

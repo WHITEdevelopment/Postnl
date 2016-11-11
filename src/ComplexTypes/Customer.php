@@ -39,12 +39,12 @@ class Customer extends BaseType
     protected $Address = null;
 
     /**
-     * @param string $CustomerNumber
-     * @param string $CustomerCode
-     * @param string $CollectionLocation
-     * @param string $ContactPerson
-     * @param string $Email
-     * @param string $Name
+     * @param string  $CustomerNumber
+     * @param string  $CustomerCode
+     * @param string  $CollectionLocation
+     * @param string  $ContactPerson
+     * @param string  $Email
+     * @param string  $Name
      * @param Address $Address
      */
     public function __construct(
@@ -75,6 +75,7 @@ class Customer extends BaseType
 
     /**
      * @param Address $Address
+     *
      * @return Customer
      */
     public function setAddress($Address)
@@ -93,6 +94,7 @@ class Customer extends BaseType
 
     /**
      * @param string $CollectionLocation
+     *
      * @return Customer
      */
     public function setCollectionLocation($CollectionLocation)
@@ -111,6 +113,7 @@ class Customer extends BaseType
 
     /**
      * @param string $ContactPerson
+     *
      * @return Customer
      */
     public function setContactPerson($ContactPerson)
@@ -129,6 +132,7 @@ class Customer extends BaseType
 
     /**
      * @param string $CustomerCode
+     *
      * @return Customer
      */
     public function setCustomerCode($CustomerCode)
@@ -147,6 +151,7 @@ class Customer extends BaseType
 
     /**
      * @param string $CustomerNumber
+     *
      * @return Customer
      */
     public function setCustomerNumber($CustomerNumber)
@@ -165,6 +170,7 @@ class Customer extends BaseType
 
     /**
      * @param string $Email
+     *
      * @return Customer
      */
     public function setEmail($Email)
@@ -183,6 +189,7 @@ class Customer extends BaseType
 
     /**
      * @param string $Name
+     *
      * @return Customer
      */
     public function setName($Name)

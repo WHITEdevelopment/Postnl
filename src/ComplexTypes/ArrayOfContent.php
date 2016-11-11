@@ -31,6 +31,7 @@ class ArrayOfContent extends BaseArrayOfType
 
     /**
      * @param Content[] $Content
+     *
      * @return ArrayOfContent
      */
     public function setContent(array $Content)

@@ -47,6 +47,7 @@ class Contact extends BaseType
 
     /**
      * @param string $ContactType
+     *
      * @return Contact
      */
     public function setContactType($ContactType)
@@ -65,6 +66,7 @@ class Contact extends BaseType
 
     /**
      * @param string $Email
+     *
      * @return Contact
      */
     public function setEmail($Email)
@@ -83,6 +85,7 @@ class Contact extends BaseType
 
     /**
      * @param string $SMSNr
+     *
      * @return Contact
      */
     public function setSMSNr($SMSNr)
@@ -101,6 +104,7 @@ class Contact extends BaseType
 
     /**
      * @param string $TelNr
+     *
      * @return Contact
      */
     public function setTelNr($TelNr)

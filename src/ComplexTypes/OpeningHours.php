@@ -48,6 +48,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Monday
+     *
      * @return OpeningHours
      */
     public function setMonday($Monday)
@@ -66,6 +67,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Tuesday
+     *
      * @return OpeningHours
      */
     public function setTuesday($Tuesday)
@@ -84,6 +86,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Wednesday
+     *
      * @return OpeningHours
      */
     public function setWednesday($Wednesday)
@@ -102,6 +105,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Thursday
+     *
      * @return OpeningHours
      */
     public function setThursday($Thursday)
@@ -120,6 +124,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Friday
+     *
      * @return OpeningHours
      */
     public function setFriday($Friday)
@@ -138,6 +143,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Saturday
+     *
      * @return OpeningHours
      */
     public function setSaturday($Saturday)
@@ -156,6 +162,7 @@ class OpeningHours extends BaseType
 
     /**
      * @param string $Sunday
+     *
      * @return OpeningHours
      */
     public function setSunday($Sunday)

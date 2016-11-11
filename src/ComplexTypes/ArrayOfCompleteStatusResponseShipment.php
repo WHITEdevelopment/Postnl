@@ -31,6 +31,7 @@ class ArrayOfCompleteStatusResponseShipment extends BaseArrayOfType
 
     /**
      * @param CompleteStatusResponseShipment[] $CompleteStatusResponseShipment
+     *
      * @return ArrayOfCompleteStatusResponseShipment
      */
     public function setCompleteStatusResponseShipment(array $CompleteStatusResponseShipment)

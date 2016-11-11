@@ -19,7 +19,7 @@ class CompleteStatusByReferenceRequest extends BaseType
     protected $Shipment = null;
 
     /**
-     * @param Message $Message
+     * @param Message         $Message
      * @param RequestCustomer $Customer
      * @param RequestShipment $Shipment
      */
@@ -43,6 +43,7 @@ class CompleteStatusByReferenceRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return CompleteStatusByReferenceRequest
      */
     public function setMessage($Message)
@@ -61,6 +62,7 @@ class CompleteStatusByReferenceRequest extends BaseType
 
     /**
      * @param RequestCustomer $Customer
+     *
      * @return CompleteStatusByReferenceRequest
      */
     public function setCustomer($Customer)
@@ -79,6 +81,7 @@ class CompleteStatusByReferenceRequest extends BaseType
 
     /**
      * @param RequestShipment $Shipment
+     *
      * @return CompleteStatusByReferenceRequest
      */
     public function setShipment($Shipment)

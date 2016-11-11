@@ -31,6 +31,7 @@ class ArrayOfWarning extends BaseArrayOfType
 
     /**
      * @param Warning[] $Warning
+     *
      * @return ArrayOfWarning
      */
     public function setWarning(array $Warning)

@@ -54,13 +54,13 @@ class TimeframeRequest extends BaseType
     protected $SundaySorting = null;
 
     /**
-     * @param string $Postalcode
-     * @param string $HouseNr
+     * @param string   $Postalcode
+     * @param string   $HouseNr
      * @param string[] $Options
-     * @param string $StartDate
-     * @param string $EndDate
-     * @param string $CountryCode
-     * @param string $SundaySorting
+     * @param string   $StartDate
+     * @param string   $EndDate
+     * @param string   $CountryCode
+     * @param string   $SundaySorting
      */
     public function __construct(
         $Postalcode,
@@ -71,8 +71,11 @@ class TimeframeRequest extends BaseType
         $CountryCode,
         $SundaySorting
     ) {
-        $this->setStartDate($StartDate ?: (new \DateTime)->format('d-m-Y'));
-        $this->setEndDate($EndDate ?: (new \DateTime('+1 week'))->format('d-m-Y'));
+        $dateTime = new \DateTime;
+        $nextWeek = new \DateTime('+1 week');
+
+        $this->setStartDate($StartDate ?: $dateTime->format('d-m-Y'));
+        $this->setEndDate($EndDate ?: $nextWeek->format('d-m-Y'));
         $this->setPostalCode($Postalcode);
         $this->setOptions($Options);
         $this->setHouseNr($HouseNr);
@@ -90,6 +93,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $City
+     *
      * @return TimeframeRequest
      */
     public function setCity($City)
@@ -108,6 +112,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $CountryCode
+     *
      * @return TimeframeRequest
      */
     public function setCountryCode($CountryCode)
@@ -126,6 +131,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $EndDate
+     *
      * @return TimeframeRequest
      */
     public function setEndDate($EndDate)
@@ -144,6 +150,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $HouseNr
+     *
      * @return TimeframeRequest
      */
     public function setHouseNr($HouseNr)
@@ -162,6 +169,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $HouseNrExt
+     *
      * @return TimeframeRequest
      */
     public function setHouseNrExt($HouseNrExt)
@@ -180,6 +188,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param ArrayOfstring $Options
+     *
      * @return TimeframeRequest
      */
     public function setOptions($Options)
@@ -198,6 +207,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $PostalCode
+     *
      * @return TimeframeRequest
      */
     public function setPostalCode($PostalCode)
@@ -216,6 +226,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $StartDate
+     *
      * @return TimeframeRequest
      */
     public function setStartDate($StartDate)
@@ -234,6 +245,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $Street
+     *
      * @return TimeframeRequest
      */
     public function setStreet($Street)
@@ -252,6 +264,7 @@ class TimeframeRequest extends BaseType
 
     /**
      * @param string $SundaySorting
+     *
      * @return TimeframeRequest
      */
     public function setSundaySorting($SundaySorting)

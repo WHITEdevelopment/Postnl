@@ -31,6 +31,7 @@ class ArrayOfMergedLabel extends BaseArrayOfType
 
     /**
      * @param MergedLabel[] $MergedLabel
+     *
      * @return ArrayOfMergedLabel
      */
     public function setMergedLabel(array $MergedLabel)

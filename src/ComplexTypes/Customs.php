@@ -54,16 +54,16 @@ class Customs extends BaseType
     protected $ShipmentType = null;
 
     /**
-     * @param string $Certificate
-     * @param string $CertificateNr
+     * @param string         $Certificate
+     * @param string         $CertificateNr
      * @param ArrayOfContent $Content
-     * @param string $Currency
-     * @param string $HandleAsNonDeliverable
-     * @param string $Invoice
-     * @param string $InvoiceNr
-     * @param string $License
-     * @param string $LicenseNr
-     * @param string $ShipmentType
+     * @param string         $Currency
+     * @param string         $HandleAsNonDeliverable
+     * @param string         $Invoice
+     * @param string         $InvoiceNr
+     * @param string         $License
+     * @param string         $LicenseNr
+     * @param string         $ShipmentType
      */
     public function __construct(
         $Certificate,
@@ -99,6 +99,7 @@ class Customs extends BaseType
 
     /**
      * @param string $Certificate
+     *
      * @return Customs
      */
     public function setCertificate($Certificate)
@@ -117,6 +118,7 @@ class Customs extends BaseType
 
     /**
      * @param string $CertificateNr
+     *
      * @return Customs
      */
     public function setCertificateNr($CertificateNr)
@@ -135,6 +137,7 @@ class Customs extends BaseType
 
     /**
      * @param ArrayOfContent $Content
+     *
      * @return Customs
      */
     public function setContent($Content)
@@ -153,6 +156,7 @@ class Customs extends BaseType
 
     /**
      * @param string $Currency
+     *
      * @return Customs
      */
     public function setCurrency($Currency)
@@ -171,6 +175,7 @@ class Customs extends BaseType
 
     /**
      * @param string $HandleAsNonDeliverable
+     *
      * @return Customs
      */
     public function setHandleAsNonDeliverable($HandleAsNonDeliverable)
@@ -189,6 +194,7 @@ class Customs extends BaseType
 
     /**
      * @param string $Invoice
+     *
      * @return Customs
      */
     public function setInvoice($Invoice)
@@ -207,6 +213,7 @@ class Customs extends BaseType
 
     /**
      * @param string $InvoiceNr
+     *
      * @return Customs
      */
     public function setInvoiceNr($InvoiceNr)
@@ -225,6 +232,7 @@ class Customs extends BaseType
 
     /**
      * @param string $License
+     *
      * @return Customs
      */
     public function setLicense($License)
@@ -243,6 +251,7 @@ class Customs extends BaseType
 
     /**
      * @param string $LicenseNr
+     *
      * @return Customs
      */
     public function setLicenseNr($LicenseNr)
@@ -261,6 +270,7 @@ class Customs extends BaseType
 
     /**
      * @param string $ShipmentType
+     *
      * @return Customs
      */
     public function setShipmentType($ShipmentType)

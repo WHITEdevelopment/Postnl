@@ -26,6 +26,7 @@ class RequestSignature extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return RequestSignature
      */
     public function setBarcode($Barcode)

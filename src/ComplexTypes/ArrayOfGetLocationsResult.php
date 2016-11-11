@@ -31,6 +31,7 @@ class ArrayOfGetLocationsResult extends BaseArrayOfType
 
     /**
      * @param GetLocationsResult[] $LocationsResult
+     *
      * @return ArrayOfGetLocationsResult
      */
     public function setLocationsResult(array $LocationsResult)

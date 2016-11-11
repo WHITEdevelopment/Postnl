@@ -14,7 +14,7 @@ class GetDeliveryDateRequest extends BaseType
     protected $Message = null;
 
     /**
-     * @param Message $Message
+     * @param Message         $Message
      * @param GetDeliveryDate $GetDeliveryDate
      */
     public function __construct(Message $Message, GetDeliveryDate $GetDeliveryDate)
@@ -33,6 +33,7 @@ class GetDeliveryDateRequest extends BaseType
 
     /**
      * @param GetDeliveryDate $GetDeliveryDate
+     *
      * @return GetDeliveryDateRequest
      */
     public function setGetDeliveryDate($GetDeliveryDate)
@@ -51,6 +52,7 @@ class GetDeliveryDateRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GetDeliveryDateRequest
      */
     public function setMessage($Message)

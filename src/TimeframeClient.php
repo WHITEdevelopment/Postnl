@@ -20,26 +20,28 @@ class TimeframeClient extends BaseClient
      * @var array $classes
      *     The complex types used by this client.
      */
-    protected $classes = [
-        'GetTimeframes',
-        'ArrayOfReasonNoTimeframe',
-        'ArrayOfTimeframe',
-        'ArrayOfTimeframeTimeFrame',
-        'GetTimeframesRequest',
-        'GetTimeframesResponse',
-        'Message',
-        'ReasonNoTimeframe',
-        'Timeframe',
-        'TimeframeRequest',
-        'TimeframeTimeFrame'
-    ];
+    protected $classes
+        = array(
+            'GetTimeframes',
+            'ArrayOfReasonNoTimeframe',
+            'ArrayOfTimeframe',
+            'ArrayOfTimeframeTimeFrame',
+            'GetTimeframesRequest',
+            'GetTimeframesResponse',
+            'Message',
+            'ReasonNoTimeframe',
+            'Timeframe',
+            'TimeframeRequest',
+            'TimeframeTimeFrame',
+        );
 
     /**
      * @param ComplexTypes\GetTimeframesRequest $getTimeframes
+     *
      * @return mixed
      */
     public function getTimeframes(ComplexTypes\GetTimeframesRequest $getTimeframes)
     {
-        return $this->__soapCall('GetTimeframes', [$getTimeframes]);
+        return $this->__soapCall('GetTimeframes', array($getTimeframes));
     }
 }

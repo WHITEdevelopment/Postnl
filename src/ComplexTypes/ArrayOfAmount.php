@@ -31,6 +31,7 @@ class ArrayOfAmount extends BaseArrayOfType
 
     /**
      * @param Amount[] $Amount
+     *
      * @return ArrayOfAmount
      */
     public function setAmount(array $Amount)

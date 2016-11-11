@@ -33,6 +33,7 @@ class Coordinate extends BaseType
 
     /**
      * @param string $Latitude
+     *
      * @return Coordinate
      */
     public function setLatitude($Latitude)
@@ -51,6 +52,7 @@ class Coordinate extends BaseType
 
     /**
      * @param string $Longitude
+     *
      * @return Coordinate
      */
     public function setLongitude($Longitude)

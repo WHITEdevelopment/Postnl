@@ -29,6 +29,7 @@ class GenerateBarcodeResponse extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return GenerateBarcodeResponse
      */
     public function setBarcode($Barcode)

@@ -35,6 +35,7 @@ class ResponseExpectation extends BaseType
 
     /**
      * @param DateTime $ETAFrom
+     *
      * @return ResponseExpectation
      */
     public function setETAFrom(DateTime $ETAFrom)
@@ -53,6 +54,7 @@ class ResponseExpectation extends BaseType
 
     /**
      * @param DateTime $ETATo
+     *
      * @return ResponseExpectation
      */
     public function setETATo(DateTime $ETATo)

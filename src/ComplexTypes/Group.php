@@ -72,6 +72,7 @@ class Group extends BaseType
      * Set self::$GroupCount.
      *
      * @param string $GroupCount
+     *
      * @return Group
      */
     public function setGroupCount($GroupCount)
@@ -94,6 +95,7 @@ class Group extends BaseType
      * Set self::$GroupSequence.
      *
      * @param string $GroupSequence
+     *
      * @return Group
      */
     public function setGroupSequence($GroupSequence)
@@ -116,6 +118,7 @@ class Group extends BaseType
      * Set self::$GroupType.
      *
      * @param string $GroupType
+     *
      * @return Group
      */
     public function setGroupType($GroupType)
@@ -138,6 +141,7 @@ class Group extends BaseType
      * Set self::$MainBarcode.
      *
      * @param string $MainBarcode
+     *
      * @return Group
      */
     public function setMainBarcode($MainBarcode)

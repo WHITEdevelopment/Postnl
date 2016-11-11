@@ -59,17 +59,17 @@ class GetDeliveryDate extends BaseType
     protected $Street = null;
 
     /**
-     * @param string $AllowSundaySorting
-     * @param string $City
-     * @param string $CountryCode
+     * @param string            $AllowSundaySorting
+     * @param string            $City
+     * @param string            $CountryCode
      * @param ArrayOfCutOffTime $CutOffTimes
-     * @param string $HouseNr
-     * @param string $HouseNrExt
-     * @param string[] $Options
-     * @param string $PostalCode
-     * @param string $ShippingDate
-     * @param string $ShippingDuration
-     * @param string $Street
+     * @param string            $HouseNr
+     * @param string            $HouseNrExt
+     * @param string[]          $Options
+     * @param string            $PostalCode
+     * @param string            $ShippingDate
+     * @param string            $ShippingDuration
+     * @param string            $Street
      */
     public function __construct(
         $AllowSundaySorting,
@@ -107,6 +107,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $AllowSundaySorting
+     *
      * @return GetDeliveryDate
      */
     public function setAllowSundaySorting($AllowSundaySorting)
@@ -125,6 +126,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $City
+     *
      * @return GetDeliveryDate
      */
     public function setCity($City)
@@ -143,6 +145,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $CountryCode
+     *
      * @return GetDeliveryDate
      */
     public function setCountryCode($CountryCode)
@@ -161,6 +164,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param ArrayOfCutOffTime $CutOffTimes
+     *
      * @return GetDeliveryDate
      */
     public function setCutOffTimes(ArrayOfCutOffTime $CutOffTimes)
@@ -179,6 +183,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $HouseNr
+     *
      * @return GetDeliveryDate
      */
     public function setHouseNr($HouseNr)
@@ -197,6 +202,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $HouseNrExt
+     *
      * @return GetDeliveryDate
      */
     public function setHouseNrExt($HouseNrExt)
@@ -215,6 +221,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string[] $Options
+     *
      * @return GetDeliveryDate
      */
     public function setOptions($Options)
@@ -233,6 +240,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $PostalCode
+     *
      * @return GetDeliveryDate
      */
     public function setPostalCode($PostalCode)
@@ -251,6 +259,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $ShippingDate
+     *
      * @return GetDeliveryDate
      */
     public function setShippingDate($ShippingDate)
@@ -269,6 +278,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $ShippingDuration
+     *
      * @return GetDeliveryDate
      */
     public function setShippingDuration($ShippingDuration)
@@ -287,6 +297,7 @@ class GetDeliveryDate extends BaseType
 
     /**
      * @param string $Street
+     *
      * @return GetDeliveryDate
      */
     public function setStreet($Street)

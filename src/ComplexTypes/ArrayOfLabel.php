@@ -31,6 +31,7 @@ class ArrayOfLabel extends BaseArrayOfType
 
     /**
      * @param Label[] $Label
+     *
      * @return ArrayOfLabel
      */
     public function setLabel(array $Label)

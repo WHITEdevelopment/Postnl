@@ -54,6 +54,7 @@ class ResponseDimension extends BaseType
 
     /**
      * @param string $Height
+     *
      * @return ResponseDimension
      */
     public function setHeight($Height)
@@ -72,6 +73,7 @@ class ResponseDimension extends BaseType
 
     /**
      * @param string $Length
+     *
      * @return ResponseDimension
      */
     public function setLength($Length)
@@ -90,6 +92,7 @@ class ResponseDimension extends BaseType
 
     /**
      * @param string $Volume
+     *
      * @return ResponseDimension
      */
     public function setVolume($Volume)
@@ -108,6 +111,7 @@ class ResponseDimension extends BaseType
 
     /**
      * @param string $Weight
+     *
      * @return ResponseDimension
      */
     public function setWeight($Weight)
@@ -126,6 +130,7 @@ class ResponseDimension extends BaseType
 
     /**
      * @param string $Width
+     *
      * @return ResponseDimension
      */
     public function setWidth($Width)

@@ -14,7 +14,7 @@ class Timeframe extends BaseType
     protected $Timeframes = null;
 
     /**
-     * @param string $Date
+     * @param string                    $Date
      * @param ArrayOfTimeframeTimeFrame $Timeframes
      */
     public function __construct($Date, ArrayOfTimeframeTimeFrame $Timeframes)
@@ -33,6 +33,7 @@ class Timeframe extends BaseType
 
     /**
      * @param string $Date
+     *
      * @return Timeframe
      */
     public function setDate($Date)
@@ -51,6 +52,7 @@ class Timeframe extends BaseType
 
     /**
      * @param ArrayOfTimeframeTimeFrame $Timeframes
+     *
      * @return Timeframe
      */
     public function setTimeframes($Timeframes)

@@ -23,6 +23,7 @@ class LocationArea extends BaseLocation
 
     /**
      * @param Coordinate $CoordinatesNorthWest
+     *
      * @return LocationArea
      */
     public function setCoordinatesNorthWest($CoordinatesNorthWest)
@@ -41,6 +42,7 @@ class LocationArea extends BaseLocation
 
     /**
      * @param Coordinate $CoordinatesSouthEast
+     *
      * @return LocationArea
      */
     public function setCoordinatesSouthEast($CoordinatesSouthEast)

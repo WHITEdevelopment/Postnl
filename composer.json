@@ -1,25 +1,21 @@
 {
-    "name": "dividebv/postnl",
-    "description": "Library to connect to PostNL's SOAP service called CIF",
-    "license": "GPL-2",
-    "authors": [
-        {
-            "name": "Ameen Ross",
-            "email": "a.ross@amdev.eu"
-        }
-    ],
-    "require": {
-        "php": "5.4 - 7",
-        "ext-soap": "*",
-        "ext-dom": "*"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "2.*",
-        "apigen/apigen": "^4.1"
-    },
-    "autoload": {
-        "psr-4" : {
-            "DivideBV\\Postnl\\" : ["src/"]
-        }
+  "name": "WHITEdevelopment/postnl",
+  "description": "Library to connect to PostNL's SOAP service called CIF for php 5.3",
+  "license": "GPL-2",
+  "authors": [
+    {
+      "name": "Ameen Ross",
+      "email": "a.ross@amdev.eu"
     }
+  ],
+  "require": {
+    "php": ">5.3",
+    "ext-soap": "*",
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DivideBV\\Postnl\\": "src/"
+    }
+  }
 }

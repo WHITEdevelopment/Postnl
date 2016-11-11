@@ -19,8 +19,8 @@ class ConfirmingMessage extends BaseType
     protected $Shipments = null;
 
     /**
-     * @param Customer $Customer
-     * @param Message $Message
+     * @param Customer        $Customer
+     * @param Message         $Message
      * @param ArrayOfShipment $Shipments
      */
     public function __construct(Customer $Customer, Message $Message, ArrayOfShipment $Shipments)
@@ -40,6 +40,7 @@ class ConfirmingMessage extends BaseType
 
     /**
      * @param Customer $Customer
+     *
      * @return ConfirmingMessage
      */
     public function setCustomer($Customer)
@@ -58,6 +59,7 @@ class ConfirmingMessage extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return ConfirmingMessage
      */
     public function setMessage($Message)
@@ -76,6 +78,7 @@ class ConfirmingMessage extends BaseType
 
     /**
      * @param ArrayOfShipment $Shipments
+     *
      * @return ConfirmingMessage
      */
     public function setShipments($Shipments)

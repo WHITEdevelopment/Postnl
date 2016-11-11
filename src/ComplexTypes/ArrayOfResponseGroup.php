@@ -31,6 +31,7 @@ class ArrayOfResponseGroup extends BaseArrayOfType
 
     /**
      * @param ResponseGroup[] $ResponseGroup
+     *
      * @return ArrayOfResponseGroup
      */
     public function setResponseGroup(array $ResponseGroup)

@@ -14,7 +14,7 @@ class ConfirmingResponseShipment extends BaseType
     protected $Warnings = null;
 
     /**
-     * @param string $Barcode
+     * @param string         $Barcode
      * @param ArrayOfWarning $Warnings
      */
     public function __construct($Barcode, ArrayOfWarning $Warnings)
@@ -33,6 +33,7 @@ class ConfirmingResponseShipment extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return ConfirmingResponseShipment
      */
     public function setBarcode($Barcode)
@@ -51,6 +52,7 @@ class ConfirmingResponseShipment extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return ConfirmingResponseShipment
      */
     public function setWarnings($Warnings)

@@ -149,59 +149,59 @@ class Shipment extends BaseType
     protected $ReturnReference = null;
 
     /**
-     * @param ArrayOfAddress $Addresses
-     * @param string $Barcode
-     * @param Dimension $Dimension
-     * @param string $ProductCodeDelivery
-     * @param ArrayOfAmount $Amounts
+     * @param ArrayOfAddress       $Addresses
+     * @param string               $Barcode
+     * @param Dimension            $Dimension
+     * @param string               $ProductCodeDelivery
+     * @param ArrayOfAmount        $Amounts
      *     Optional.
-     * @param string $CollectionTimeStampEnd
+     * @param string               $CollectionTimeStampEnd
      *     Optional.
-     * @param string $CollectionTimeStampStart
+     * @param string               $CollectionTimeStampStart
      *     Optional.
-     * @param ArrayOfContact $Contacts
+     * @param ArrayOfContact       $Contacts
      *     Optional.
-     * @param string $Content
+     * @param string               $Content
      *     Optional.
-     * @param string $CostCenter
+     * @param string               $CostCenter
      *     Optional.
-     * @param string $CustomerOrderNumber
+     * @param string               $CustomerOrderNumber
      *     Optional.
-     * @param Customs $Customs
+     * @param Customs              $Customs
      *     Optional.
-     * @param string $DeliveryAddress
+     * @param string               $DeliveryAddress
      *     Optional.
-     * @param string $DeliveryDate
+     * @param string               $DeliveryDate
      *     Optional.
-     * @param string $DownPartnerBarcode
+     * @param string               $DownPartnerBarcode
      *     Optional.
-     * @param string $DownPartnerID
+     * @param string               $DownPartnerID
      *     Optional.
-     * @param string $DownPartnerLocation
+     * @param string               $DownPartnerLocation
      *     Optional.
-     * @param ArrayOfGroup $Groups
+     * @param ArrayOfGroup         $Groups
      *     Optional.
-     * @param string $IDExpiration
+     * @param string               $IDExpiration
      *     Optional.
-     * @param string $IDNumber
+     * @param string               $IDNumber
      *     Optional.
-     * @param string $IDType
+     * @param string               $IDType
      *     Optional.
-     * @param string $ProductCodeCollect
+     * @param string               $ProductCodeCollect
      *     Optional.
      * @param ArrayOfProductOption $ProductOptions
      *     Optional.
-     * @param string $ReceiverDateOfBirth
+     * @param string               $ReceiverDateOfBirth
      *     Optional.
-     * @param string $Reference
+     * @param string               $Reference
      *     Optional.
-     * @param string $ReferenceCollect
+     * @param string               $ReferenceCollect
      *     Optional.
-     * @param string $Remark
+     * @param string               $Remark
      *     Optional.
-     * @param string $ReturnBarcode
+     * @param string               $ReturnBarcode
      *     Optional.
-     * @param string $ReturnReference
+     * @param string               $ReturnReference
      *     Optional.
      */
     public function __construct(
@@ -278,6 +278,7 @@ class Shipment extends BaseType
 
     /**
      * @param ArrayOfAddress $Addresses
+     *
      * @return Shipment
      */
     public function setAddresses($Addresses)
@@ -296,6 +297,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return Shipment
      */
     public function setBarcode($Barcode)
@@ -314,6 +316,7 @@ class Shipment extends BaseType
 
     /**
      * @param Dimension $Dimension
+     *
      * @return Shipment
      */
     public function setDimension($Dimension)
@@ -332,6 +335,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $ProductCodeDelivery
+     *
      * @return Shipment
      */
     public function setProductCodeDelivery($ProductCodeDelivery)
@@ -350,6 +354,7 @@ class Shipment extends BaseType
 
     /**
      * @param ArrayOfAmount $Amounts
+     *
      * @return Shipment
      */
     public function setAmounts($Amounts)
@@ -368,6 +373,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $CollectionTimeStampEnd
+     *
      * @return Shipment
      */
     public function setCollectionTimeStampEnd($CollectionTimeStampEnd)
@@ -386,6 +392,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $CollectionTimeStampStart
+     *
      * @return Shipment
      */
     public function setCollectionTimeStampStart($CollectionTimeStampStart)
@@ -404,6 +411,7 @@ class Shipment extends BaseType
 
     /**
      * @param ArrayOfContact $Contacts
+     *
      * @return Shipment
      */
     public function setContacts($Contacts)
@@ -422,6 +430,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $Content
+     *
      * @return Shipment
      */
     public function setContent($Content)
@@ -440,6 +449,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $CostCenter
+     *
      * @return Shipment
      */
     public function setCostCenter($CostCenter)
@@ -458,6 +468,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $CustomerOrderNumber
+     *
      * @return Shipment
      */
     public function setCustomerOrderNumber($CustomerOrderNumber)
@@ -476,6 +487,7 @@ class Shipment extends BaseType
 
     /**
      * @param Customs $Customs
+     *
      * @return Shipment
      */
     public function setCustoms($Customs)
@@ -494,6 +506,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $DeliveryAddress
+     *
      * @return Shipment
      */
     public function setDeliveryAddress($DeliveryAddress)
@@ -512,6 +525,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $DeliveryDate
+     *
      * @return Shipment
      */
     public function setDeliveryDate($DeliveryDate)
@@ -530,6 +544,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $DownPartnerBarcode
+     *
      * @return Shipment
      */
     public function setDownPartnerBarcode($DownPartnerBarcode)
@@ -548,6 +563,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $DownPartnerID
+     *
      * @return Shipment
      */
     public function setDownPartnerID($DownPartnerID)
@@ -566,6 +582,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $DownPartnerLocation
+     *
      * @return Shipment
      */
     public function setDownPartnerLocation($DownPartnerLocation)
@@ -584,6 +601,7 @@ class Shipment extends BaseType
 
     /**
      * @param ArrayOfGroup $Groups
+     *
      * @return Shipment
      */
     public function setGroups($Groups)
@@ -602,6 +620,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $IDExpiration
+     *
      * @return Shipment
      */
     public function setIDExpiration($IDExpiration)
@@ -620,6 +639,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $IDNumber
+     *
      * @return Shipment
      */
     public function setIDNumber($IDNumber)
@@ -638,6 +658,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $IDType
+     *
      * @return Shipment
      */
     public function setIDType($IDType)
@@ -656,6 +677,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $ProductCodeCollect
+     *
      * @return Shipment
      */
     public function setProductCodeCollect($ProductCodeCollect)
@@ -674,6 +696,7 @@ class Shipment extends BaseType
 
     /**
      * @param ArrayOfProductOption $ProductOptions
+     *
      * @return Shipment
      */
     public function setProductOptions($ProductOptions)
@@ -692,6 +715,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $ReceiverDateOfBirth
+     *
      * @return Shipment
      */
     public function setReceiverDateOfBirth($ReceiverDateOfBirth)
@@ -710,6 +734,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $Reference
+     *
      * @return Shipment
      */
     public function setReference($Reference)
@@ -728,6 +753,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $ReferenceCollect
+     *
      * @return Shipment
      */
     public function setReferenceCollect($ReferenceCollect)
@@ -746,6 +772,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $Remark
+     *
      * @return Shipment
      */
     public function setRemark($Remark)
@@ -764,6 +791,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $ReturnBarcode
+     *
      * @return Shipment
      */
     public function setReturnBarcode($ReturnBarcode)
@@ -782,6 +810,7 @@ class Shipment extends BaseType
 
     /**
      * @param string $ReturnReference
+     *
      * @return Shipment
      */
     public function setReturnReference($ReturnReference)

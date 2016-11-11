@@ -19,8 +19,8 @@ class CurrentStatusByPhaseRequest extends BaseType
     protected $Shipment = null;
 
     /**
-     * @param Message $Message
-     * @param RequestCustomer $Customer
+     * @param Message              $Message
+     * @param RequestCustomer      $Customer
      * @param RequestShipmentPhase $Shipment
      */
     public function __construct(
@@ -43,6 +43,7 @@ class CurrentStatusByPhaseRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return CurrentStatusByPhaseRequest
      */
     public function setMessage($Message)
@@ -61,6 +62,7 @@ class CurrentStatusByPhaseRequest extends BaseType
 
     /**
      * @param RequestCustomer $Customer
+     *
      * @return CurrentStatusByPhaseRequest
      */
     public function setCustomer($Customer)
@@ -79,6 +81,7 @@ class CurrentStatusByPhaseRequest extends BaseType
 
     /**
      * @param RequestShipmentPhase $Shipment
+     *
      * @return CurrentStatusByPhaseRequest
      */
     public function setShipment($Shipment)

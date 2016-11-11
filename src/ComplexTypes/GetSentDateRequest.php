@@ -14,7 +14,7 @@ class GetSentDateRequest extends BaseType
     protected $Message = null;
 
     /**
-     * @param Message $Message
+     * @param Message     $Message
      * @param GetSentDate $GetSentDate
      */
     public function __construct(Message $Message, GetSentDate $GetSentDate)
@@ -33,6 +33,7 @@ class GetSentDateRequest extends BaseType
 
     /**
      * @param GetSentDate $GetSentDate
+     *
      * @return GetSentDateRequest
      */
     public function setGetSentDate($GetSentDate)
@@ -51,6 +52,7 @@ class GetSentDateRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GetSentDateRequest
      */
     public function setMessage($Message)

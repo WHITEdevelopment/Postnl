@@ -171,6 +171,7 @@ class Address extends BaseType
 
     /**
      * @param string $AddressType
+     *
      * @return Address
      */
     public function setAddressType($AddressType)
@@ -189,6 +190,7 @@ class Address extends BaseType
 
     /**
      * @param string $FirstName
+     *
      * @return Address
      */
     public function setFirstName($FirstName)
@@ -207,6 +209,7 @@ class Address extends BaseType
 
     /**
      * @param string $Name
+     *
      * @return Address
      */
     public function setName($Name)
@@ -225,6 +228,7 @@ class Address extends BaseType
 
     /**
      * @param string $CompanyName
+     *
      * @return Address
      */
     public function setCompanyName($CompanyName)
@@ -243,6 +247,7 @@ class Address extends BaseType
 
     /**
      * @param string $Street
+     *
      * @return Address
      */
     public function setStreet($Street)
@@ -261,6 +266,7 @@ class Address extends BaseType
 
     /**
      * @param string $HouseNr
+     *
      * @return Address
      */
     public function setHouseNr($HouseNr)
@@ -279,6 +285,7 @@ class Address extends BaseType
 
     /**
      * @param string $HouseNrExt
+     *
      * @return Address
      */
     public function setHouseNrExt($HouseNrExt)
@@ -297,6 +304,7 @@ class Address extends BaseType
 
     /**
      * @param string $Zipcode
+     *
      * @return Address
      */
     public function setZipcode($Zipcode)
@@ -315,6 +323,7 @@ class Address extends BaseType
 
     /**
      * @param string $City
+     *
      * @return Address
      */
     public function setCity($City)
@@ -333,6 +342,7 @@ class Address extends BaseType
 
     /**
      * @param string $Countrycode
+     *
      * @return Address
      */
     public function setCountrycode($Countrycode)
@@ -351,6 +361,7 @@ class Address extends BaseType
 
     /**
      * @param string $Area
+     *
      * @return Address
      */
     public function setArea($Area)
@@ -369,6 +380,7 @@ class Address extends BaseType
 
     /**
      * @param string $Buildingname
+     *
      * @return Address
      */
     public function setBuildingname($Buildingname)
@@ -387,6 +399,7 @@ class Address extends BaseType
 
     /**
      * @param string $Department
+     *
      * @return Address
      */
     public function setDepartment($Department)
@@ -405,6 +418,7 @@ class Address extends BaseType
 
     /**
      * @param string $Doorcode
+     *
      * @return Address
      */
     public function setDoorcode($Doorcode)
@@ -423,6 +437,7 @@ class Address extends BaseType
 
     /**
      * @param string $Floor
+     *
      * @return Address
      */
     public function setFloor($Floor)
@@ -441,6 +456,7 @@ class Address extends BaseType
 
     /**
      * @param string $Region
+     *
      * @return Address
      */
     public function setRegion($Region)
@@ -459,6 +475,7 @@ class Address extends BaseType
 
     /**
      * @param string $Remark
+     *
      * @return Address
      */
     public function setRemark($Remark)

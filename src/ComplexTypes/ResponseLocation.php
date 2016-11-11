@@ -74,20 +74,20 @@ class ResponseLocation extends BaseType
     protected $TerminalType = null;
 
     /**
-     * @param Address $Address
-     * @param string[] $DeliveryOptions
-     * @param string $Distance
-     * @param string $Latitude
-     * @param string $LocationCode
-     * @param string $Longtitude
-     * @param string $Name
+     * @param Address      $Address
+     * @param string[]     $DeliveryOptions
+     * @param string       $Distance
+     * @param string       $Latitude
+     * @param string       $LocationCode
+     * @param string       $Longtitude
+     * @param string       $Name
      * @param OpeningHours $OpeningHours
-     * @param string $PartnerName
-     * @param string $PhoneNumber
-     * @param string $RetailFormulaName
-     * @param string $RetailNetworkID
-     * @param string $Saleschannel
-     * @param string $TerminalType
+     * @param string       $PartnerName
+     * @param string       $PhoneNumber
+     * @param string       $RetailFormulaName
+     * @param string       $RetailNetworkID
+     * @param string       $Saleschannel
+     * @param string       $TerminalType
      */
     public function __construct(
         Address $Address,
@@ -131,6 +131,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param Address $Address
+     *
      * @return ResponseLocation
      */
     public function setAddress($Address)
@@ -149,6 +150,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string[] $DeliveryOptions
+     *
      * @return ResponseLocation
      */
     public function setDeliveryOptions($DeliveryOptions)
@@ -167,6 +169,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $Distance
+     *
      * @return ResponseLocation
      */
     public function setDistance($Distance)
@@ -185,6 +188,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $Latitude
+     *
      * @return ResponseLocation
      */
     public function setLatitude($Latitude)
@@ -203,6 +207,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $LocationCode
+     *
      * @return ResponseLocation
      */
     public function setLocationCode($LocationCode)
@@ -221,6 +226,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $Longitude
+     *
      * @return ResponseLocation
      */
     public function setLongitude($Longitude)
@@ -239,6 +245,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $Name
+     *
      * @return ResponseLocation
      */
     public function setName($Name)
@@ -257,6 +264,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param OpeningHours $OpeningHours
+     *
      * @return ResponseLocation
      */
     public function setOpeningHours($OpeningHours)
@@ -275,6 +283,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $PartnerName
+     *
      * @return ResponseLocation
      */
     public function setPartnerName($PartnerName)
@@ -293,6 +302,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $PhoneNumber
+     *
      * @return ResponseLocation
      */
     public function setPhoneNumber($PhoneNumber)
@@ -311,6 +321,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $RetailFormulaName
+     *
      * @return ResponseLocation
      */
     public function setRetailFormulaName($RetailFormulaName)
@@ -329,6 +340,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $RetailNetworkID
+     *
      * @return ResponseLocation
      */
     public function setRetailNetworkID($RetailNetworkID)
@@ -347,6 +359,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $Saleschannel
+     *
      * @return ResponseLocation
      */
     public function setSaleschannel($Saleschannel)
@@ -365,6 +378,7 @@ class ResponseLocation extends BaseType
 
     /**
      * @param string $TerminalType
+     *
      * @return ResponseLocation
      */
     public function setTerminalType($TerminalType)

@@ -31,6 +31,7 @@ class ArrayOfResponseLocation extends BaseArrayOfType
 
     /**
      * @param ResponseLocation[] $ResponseLocation
+     *
      * @return ArrayOfResponseLocation
      */
     public function setResponseLocation(array $ResponseLocation)

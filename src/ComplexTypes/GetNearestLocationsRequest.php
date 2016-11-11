@@ -19,9 +19,9 @@ class GetNearestLocationsRequest extends BaseType
     protected $Message = null;
 
     /**
-     * @param Message $Message
+     * @param Message  $Message
      * @param Location $Location
-     * @param string $Countrycode
+     * @param string   $Countrycode
      */
     public function __construct(Message $Message, Location $Location, $Countrycode)
     {
@@ -40,6 +40,7 @@ class GetNearestLocationsRequest extends BaseType
 
     /**
      * @param string $Countrycode
+     *
      * @return GetNearestLocationsRequest
      */
     public function setCountrycode($Countrycode)
@@ -58,6 +59,7 @@ class GetNearestLocationsRequest extends BaseType
 
     /**
      * @param Location $Location
+     *
      * @return GetNearestLocationsRequest
      */
     public function setLocation($Location)
@@ -76,6 +78,7 @@ class GetNearestLocationsRequest extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GetNearestLocationsRequest
      */
     public function setMessage($Message)

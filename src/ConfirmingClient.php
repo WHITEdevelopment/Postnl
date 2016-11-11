@@ -20,38 +20,40 @@ class ConfirmingClient extends BaseClient
      * @var array $classes
      *     The complex types used by this client.
      */
-    protected $classes = [
-        'ConfirmingMessage',
-        'Customer',
-        'Address',
-        'Message',
-        'ArrayOfShipment',
-        'Shipment',
-        'ArrayOfAddress',
-        'ArrayOfAmount',
-        'Amount',
-        'ArrayOfContact',
-        'Contact',
-        'Customs',
-        'ArrayOfContent',
-        'Content',
-        'Dimension',
-        'ArrayOfGroup',
-        'Group',
-        'ArrayOfProductOption',
-        'ProductOption',
-        'ArrayOfConfirmingResponseShipment',
-        'ConfirmingResponseShipment',
-        'ArrayOfWarning',
-        'Warning',
-    ];
+    protected $classes
+        = array(
+            'ConfirmingMessage',
+            'Customer',
+            'Address',
+            'Message',
+            'ArrayOfShipment',
+            'Shipment',
+            'ArrayOfAddress',
+            'ArrayOfAmount',
+            'Amount',
+            'ArrayOfContact',
+            'Contact',
+            'Customs',
+            'ArrayOfContent',
+            'Content',
+            'Dimension',
+            'ArrayOfGroup',
+            'Group',
+            'ArrayOfProductOption',
+            'ProductOption',
+            'ArrayOfConfirmingResponseShipment',
+            'ConfirmingResponseShipment',
+            'ArrayOfWarning',
+            'Warning',
+        );
 
     /**
      * @param ComplexTypes\ConfirmingMessage $Confirming
+     *
      * @return ComplexTypes\ArrayOfConfirmingResponseShipment
      */
     public function confirming(ComplexTypes\ConfirmingMessage $Confirming)
     {
-        return $this->__soapCall('Confirming', [$Confirming]);
+        return $this->__soapCall('Confirming', array($Confirming));
     }
 }

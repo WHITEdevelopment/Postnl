@@ -33,6 +33,7 @@ class Warning extends BaseType
 
     /**
      * @param string $Code
+     *
      * @return Warning
      */
     public function setCode($Code)
@@ -51,6 +52,7 @@ class Warning extends BaseType
 
     /**
      * @param string $Description
+     *
      * @return Warning
      */
     public function setDescription($Description)

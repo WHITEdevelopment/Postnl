@@ -31,6 +31,7 @@ class ArrayOfCompleteStatusResponseEvent extends BaseArrayOfType
 
     /**
      * @param CompleteStatusResponseEvent[] $CompleteStatusResponseEvent
+     *
      * @return ArrayOfCompleteStatusResponseEvent
      */
     public function setCompleteStatusResponseEvent(array $CompleteStatusResponseEvent)

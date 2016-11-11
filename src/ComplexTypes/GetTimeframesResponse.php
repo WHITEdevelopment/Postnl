@@ -15,7 +15,7 @@ class GetTimeframesResponse extends BaseType
 
     /**
      * @param ArrayOfReasonNoTimeframe $ReasonNoTimeframes
-     * @param ArrayOfTimeframe $Timeframes
+     * @param ArrayOfTimeframe         $Timeframes
      */
     public function __construct(ArrayOfReasonNoTimeframe $ReasonNoTimeframes, ArrayOfTimeframe $Timeframes)
     {
@@ -33,6 +33,7 @@ class GetTimeframesResponse extends BaseType
 
     /**
      * @param ArrayOfReasonNoTimeframe $ReasonNoTimeframes
+     *
      * @return GetTimeframesResponse
      */
     public function setReasonNoTimeframes($ReasonNoTimeframes)
@@ -51,6 +52,7 @@ class GetTimeframesResponse extends BaseType
 
     /**
      * @param ArrayOfTimeframe $Timeframes
+     *
      * @return GetTimeframesResponse
      */
     public function setTimeframes($Timeframes)

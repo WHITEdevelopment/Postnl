@@ -22,9 +22,9 @@ class GenerateBarcodeMessage extends BaseType
     protected $Barcode = null;
 
     /**
-     * @param Message $Message
+     * @param Message                 $Message
      * @param GenerateBarcodeCustomer $Customer
-     * @param Barcode $Barcode
+     * @param Barcode                 $Barcode
      */
     public function __construct(Message $Message, GenerateBarcodeCustomer $Customer, Barcode $Barcode)
     {
@@ -43,6 +43,7 @@ class GenerateBarcodeMessage extends BaseType
 
     /**
      * @param Message $Message
+     *
      * @return GenerateBarcodeMessage
      */
     public function setMessage($Message)
@@ -61,6 +62,7 @@ class GenerateBarcodeMessage extends BaseType
 
     /**
      * @param GenerateBarcodeCustomer $Customer
+     *
      * @return GenerateBarcodeMessage
      */
     public function setCustomer($Customer)
@@ -79,6 +81,7 @@ class GenerateBarcodeMessage extends BaseType
 
     /**
      * @param Barcode $Barcode
+     *
      * @return GenerateBarcodeMessage
      */
     public function setBarcode($Barcode)

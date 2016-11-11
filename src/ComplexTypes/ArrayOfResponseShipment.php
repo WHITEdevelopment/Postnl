@@ -31,6 +31,7 @@ class ArrayOfResponseShipment extends BaseArrayOfType
 
     /**
      * @param ResponseShipment[] $ResponseShipment
+     *
      * @return ArrayOfResponseShipment
      */
     public function setResponseShipment(array $ResponseShipment)

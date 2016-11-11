@@ -59,6 +59,7 @@ class CompleteStatusResponseOldStatus extends BaseType
 
     /**
      * @param string $Code
+     *
      * @return CompleteStatusResponseOldStatus
      */
     public function setCode($Code)
@@ -77,6 +78,7 @@ class CompleteStatusResponseOldStatus extends BaseType
 
     /**
      * @param string $Description
+     *
      * @return CompleteStatusResponseOldStatus
      */
     public function setDescription($Description)
@@ -95,6 +97,7 @@ class CompleteStatusResponseOldStatus extends BaseType
 
     /**
      * @param string $PhaseCode
+     *
      * @return CompleteStatusResponseOldStatus
      */
     public function setPhaseCode($PhaseCode)
@@ -113,6 +116,7 @@ class CompleteStatusResponseOldStatus extends BaseType
 
     /**
      * @param string $PhaseDescription
+     *
      * @return CompleteStatusResponseOldStatus
      */
     public function setPhaseDescription($PhaseDescription)
@@ -131,6 +135,7 @@ class CompleteStatusResponseOldStatus extends BaseType
 
     /**
      * @param string $TimeStamp
+     *
      * @return CompleteStatusResponseOldStatus
      */
     public function setTimeStamp($TimeStamp)

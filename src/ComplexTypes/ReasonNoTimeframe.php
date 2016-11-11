@@ -24,9 +24,9 @@ class ReasonNoTimeframe extends BaseType
     protected $Options = null;
 
     /**
-     * @param string $Code
-     * @param string $Date
-     * @param string $Description
+     * @param string   $Code
+     * @param string   $Date
+     * @param string   $Description
      * @param string[] $Options
      */
     public function __construct($Code, $Date, $Description, array $Options)
@@ -47,6 +47,7 @@ class ReasonNoTimeframe extends BaseType
 
     /**
      * @param string $Code
+     *
      * @return ReasonNoTimeframe
      */
     public function setCode($Code)
@@ -65,6 +66,7 @@ class ReasonNoTimeframe extends BaseType
 
     /**
      * @param string $Date
+     *
      * @return ReasonNoTimeframe
      */
     public function setDate($Date)
@@ -83,6 +85,7 @@ class ReasonNoTimeframe extends BaseType
 
     /**
      * @param string $Description
+     *
      * @return ReasonNoTimeframe
      */
     public function setDescription($Description)
@@ -101,6 +104,7 @@ class ReasonNoTimeframe extends BaseType
 
     /**
      * @param string[] $Options
+     *
      * @return ReasonNoTimeframe
      */
     public function setOptions($Options)

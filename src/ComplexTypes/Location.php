@@ -37,8 +37,8 @@ class Location extends BaseLocation
      * @param string $PostalCode
      * @param string $AllowSundaySorting
      * @param string $DeliveryDate
-     * @param array $DeliveryOptions
-     * @param array $Options
+     * @param array  $DeliveryOptions
+     * @param array  $Options
      * @param string $Coordinates
      * @param string $City
      * @param string $Street
@@ -49,8 +49,8 @@ class Location extends BaseLocation
         $PostalCode,
         $AllowSundaySorting,
         $DeliveryDate = null,
-        $DeliveryOptions = ['PG'],
-        $Options = ['Daytime'],
+        $DeliveryOptions = array('PG'),
+        $Options = array('Daytime'),
         $Coordinates = null,
         $City = null,
         $Street = null,
@@ -76,6 +76,7 @@ class Location extends BaseLocation
 
     /**
      * @param string $City
+     *
      * @return Location
      */
     public function setCity($City)
@@ -94,6 +95,7 @@ class Location extends BaseLocation
 
     /**
      * @param Coordinate $Coordinates
+     *
      * @return Location
      */
     public function setCoordinates($Coordinates)
@@ -112,6 +114,7 @@ class Location extends BaseLocation
 
     /**
      * @param string $HouseNr
+     *
      * @return Location
      */
     public function setHouseNr($HouseNr)
@@ -130,6 +133,7 @@ class Location extends BaseLocation
 
     /**
      * @param string $HouseNrExt
+     *
      * @return Location
      */
     public function setHouseNrExt($HouseNrExt)
@@ -148,6 +152,7 @@ class Location extends BaseLocation
 
     /**
      * @param string $Postalcode
+     *
      * @return Location
      */
     public function setPostalcode($Postalcode)
@@ -166,6 +171,7 @@ class Location extends BaseLocation
 
     /**
      * @param string $Street
+     *
      * @return Location
      */
     public function setStreet($Street)

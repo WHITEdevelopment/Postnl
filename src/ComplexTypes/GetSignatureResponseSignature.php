@@ -21,8 +21,8 @@ class GetSignatureResponseSignature extends BaseType
     protected $SignatureImage = null;
 
     /**
-     * @param string $Barcode
-     * @param DateTime $SignatureDate
+     * @param string       $Barcode
+     * @param DateTime     $SignatureDate
      * @param base64Binary $SignatureImage
      */
     public function __construct($Barcode, DateTime $SignatureDate, $SignatureImage)
@@ -42,6 +42,7 @@ class GetSignatureResponseSignature extends BaseType
 
     /**
      * @param string $Barcode
+     *
      * @return GetSignatureResponseSignature
      */
     public function setBarcode($Barcode)
@@ -60,6 +61,7 @@ class GetSignatureResponseSignature extends BaseType
 
     /**
      * @param DateTime $SignatureDate
+     *
      * @return GetSignatureResponseSignature
      */
     public function setSignatureDate(DateTime $SignatureDate)
@@ -78,6 +80,7 @@ class GetSignatureResponseSignature extends BaseType
 
     /**
      * @param base64Binary $SignatureImage
+     *
      * @return GetSignatureResponseSignature
      */
     public function setSignatureImage($SignatureImage)

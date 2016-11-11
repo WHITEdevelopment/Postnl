@@ -31,6 +31,7 @@ class ArrayOfTimeframe extends BaseArrayOfType
 
     /**
      * @param Timeframe[] $Timeframe
+     *
      * @return ArrayOfTimeframe
      */
     public function setTimeframe(array $Timeframe)

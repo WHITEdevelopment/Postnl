@@ -31,6 +31,7 @@ class ArrayOfConfirmingResponseShipment extends BaseArrayOfType
 
     /**
      * @param ConfirmingResponseShipment[] $ConfirmingResponseShipment
+     *
      * @return ArrayOfConfirmingResponseShipment
      */
     public function setConfirmingResponseShipment(array $ConfirmingResponseShipment)

@@ -20,23 +20,25 @@ class DeliveryDateClient extends BaseClient
      * @var array $classes
      *     The complex types used by this client.
      */
-    protected $classes = [
-        'ArrayOfCutOffTime',
-        'ArrayOfExceptionData',
-        'CifException',
-        'CutOffTime',
-        'ExceptionData',
-        'GetDeliveryDate',
-        'GetDeliveryDateRequest',
-        'GetDeliveryDateResponse',
-        'GetSentDate',
-        'GetSentDateRequest',
-        'GetSentDateResponse',
-        'Message'
-    ];
+    protected $classes
+        = array(
+            'ArrayOfCutOffTime',
+            'ArrayOfExceptionData',
+            'CifException',
+            'CutOffTime',
+            'ExceptionData',
+            'GetDeliveryDate',
+            'GetDeliveryDateRequest',
+            'GetDeliveryDateResponse',
+            'GetSentDate',
+            'GetSentDateRequest',
+            'GetSentDateResponse',
+            'Message',
+        );
 
     /**
      * @param ComplexTypes\GetDeliveryDateRequest $GetDeliveryDate
+     *
      * @return ComplexTypes\GetDeliveryDateResponse
      */
     public function getDeliveryDate(ComplexTypes\GetDeliveryDateRequest $GetDeliveryDate)
@@ -46,6 +48,7 @@ class DeliveryDateClient extends BaseClient
 
     /**
      * @param ComplexTypes\GetSentDateRequest $GetSentDateRequest
+     *
      * @return ComplexTypes\GetSentDateResponse
      */
     public function getSentDate(ComplexTypes\GetSentDateRequest $GetSentDateRequest)

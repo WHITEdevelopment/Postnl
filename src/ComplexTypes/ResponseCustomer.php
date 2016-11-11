@@ -40,6 +40,7 @@ class ResponseCustomer extends BaseType
 
     /**
      * @param string $CustomerCode
+     *
      * @return ResponseCustomer
      */
     public function setCustomerCode($CustomerCode)
@@ -58,6 +59,7 @@ class ResponseCustomer extends BaseType
 
     /**
      * @param string $CustomerNumber
+     *
      * @return ResponseCustomer
      */
     public function setCustomerNumber($CustomerNumber)
@@ -76,6 +78,7 @@ class ResponseCustomer extends BaseType
 
     /**
      * @param string $Name
+     *
      * @return ResponseCustomer
      */
     public function setName($Name)

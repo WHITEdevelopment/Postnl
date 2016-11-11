@@ -31,6 +31,7 @@ class ArrayOfResponseAddress extends BaseArrayOfType
 
     /**
      * @param ResponseAddress[] $ResponseAddress
+     *
      * @return ArrayOfResponseAddress
      */
     public function setResponseAddress(array $ResponseAddress)

@@ -10,6 +10,7 @@ class CifException extends \Exception
 
     /**
      * @param ArrayOfExceptionData $Errors
+     *
      * @return CifException
      */
     public function __construct(ArrayOfExceptionData $Errors)
@@ -27,6 +28,7 @@ class CifException extends \Exception
 
     /**
      * @param ArrayOfExceptionData $Errors
+     *
      * @return CifException
      */
     public function setErrors(ArrayOfExceptionData $Errors)

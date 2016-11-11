@@ -15,7 +15,7 @@ class GetLocationsResponse extends BaseType
 
     /**
      * @param ArrayOfResponseLocation $GetLocationsResult
-     * @param ArrayOfWarning $Warnings
+     * @param ArrayOfWarning          $Warnings
      */
     public function __construct(ArrayOfResponseLocation $GetLocationsResult, ArrayOfWarning $Warnings)
     {
@@ -33,6 +33,7 @@ class GetLocationsResponse extends BaseType
 
     /**
      * @param ArrayOfResponseLocation $GetLocationsResult
+     *
      * @return GetLocationsResponse
      */
     public function setGetLocationsResult($GetLocationsResult)
@@ -51,6 +52,7 @@ class GetLocationsResponse extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return GetLocationsResponse
      */
     public function setWarnings($Warnings)

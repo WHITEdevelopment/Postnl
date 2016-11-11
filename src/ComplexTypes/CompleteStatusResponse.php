@@ -26,6 +26,7 @@ class CompleteStatusResponse extends BaseType
 
     /**
      * @param ArrayOfCompleteStatusResponseShipment $Shipments
+     *
      * @return CompleteStatusResponse
      */
     public function setShipments($Shipments)

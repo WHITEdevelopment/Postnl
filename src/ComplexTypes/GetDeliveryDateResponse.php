@@ -15,7 +15,7 @@ class GetDeliveryDateResponse extends BaseType
 
     /**
      * @param string $DeliveryDate
-     * @param array $Options
+     * @param array  $Options
      */
     public function __construct($DeliveryDate, array $Options)
     {
@@ -33,6 +33,7 @@ class GetDeliveryDateResponse extends BaseType
 
     /**
      * @param string $DeliveryDate
+     *
      * @return GetDeliveryDateResponse
      */
     public function setDeliveryDate($DeliveryDate)
@@ -51,6 +52,7 @@ class GetDeliveryDateResponse extends BaseType
 
     /**
      * @param string[] $Options
+     *
      * @return GetDeliveryDateResponse
      */
     public function setOptions(array $Options)

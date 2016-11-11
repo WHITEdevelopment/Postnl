@@ -31,6 +31,7 @@ class ArrayOfCurrentStatusResponseShipment extends BaseArrayOfType
 
     /**
      * @param CurrentStatusResponseShipment[] $CurrentStatusResponseShipment
+     *
      * @return ArrayOfCurrentStatusResponseShipment
      */
     public function setCurrentStatusResponseShipment(array $CurrentStatusResponseShipment)

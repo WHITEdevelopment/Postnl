@@ -15,7 +15,7 @@ class GetSignatureResponse extends BaseType
 
     /**
      * @param ArrayOfGetSignatureResponseSignature $Signature
-     * @param ArrayOfWarning $Warnings
+     * @param ArrayOfWarning                       $Warnings
      */
     public function __construct(ArrayOfGetSignatureResponseSignature $Signature, ArrayOfWarning $Warnings)
     {
@@ -33,6 +33,7 @@ class GetSignatureResponse extends BaseType
 
     /**
      * @param ArrayOfGetSignatureResponseSignature $Signature
+     *
      * @return GetSignatureResponse
      */
     public function setSignature($Signature)
@@ -51,6 +52,7 @@ class GetSignatureResponse extends BaseType
 
     /**
      * @param ArrayOfWarning $Warnings
+     *
      * @return GetSignatureResponse
      */
     public function setWarnings($Warnings)

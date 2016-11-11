@@ -59,6 +59,7 @@ class ResponseStatus extends BaseType
 
     /**
      * @param string $CurrentPhaseCode
+     *
      * @return ResponseStatus
      */
     public function setCurrentPhaseCode($CurrentPhaseCode)
@@ -77,6 +78,7 @@ class ResponseStatus extends BaseType
 
     /**
      * @param string $CurrentPhaseDescription
+     *
      * @return ResponseStatus
      */
     public function setCurrentPhaseDescription($CurrentPhaseDescription)
@@ -95,6 +97,7 @@ class ResponseStatus extends BaseType
 
     /**
      * @param string $CurrentStatusCode
+     *
      * @return ResponseStatus
      */
     public function setCurrentStatusCode($CurrentStatusCode)
@@ -113,6 +116,7 @@ class ResponseStatus extends BaseType
 
     /**
      * @param string $CurrentStatusDescription
+     *
      * @return ResponseStatus
      */
     public function setCurrentStatusDescription($CurrentStatusDescription)
@@ -131,6 +135,7 @@ class ResponseStatus extends BaseType
 
     /**
      * @param string $CurrentStatusTimeStamp
+     *
      * @return ResponseStatus
      */
     public function setCurrentStatusTimeStamp($CurrentStatusTimeStamp)

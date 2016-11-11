@@ -20,8 +20,8 @@ class Label extends BaseType
 
     /**
      * @param base64Binary $Content
-     * @param string $Contenttype
-     * @param string $Labeltype
+     * @param string       $Contenttype
+     * @param string       $Labeltype
      */
     public function __construct($Content, $Contenttype, $Labeltype)
     {
@@ -40,6 +40,7 @@ class Label extends BaseType
 
     /**
      * @param base64Binary $Content
+     *
      * @return Label
      */
     public function setContent($Content)
@@ -58,6 +59,7 @@ class Label extends BaseType
 
     /**
      * @param string $Contenttype
+     *
      * @return Label
      */
     public function setContenttype($Contenttype)
@@ -76,6 +78,7 @@ class Label extends BaseType
 
     /**
      * @param string $Labeltype
+     *
      * @return Label
      */
     public function setLabeltype($Labeltype)

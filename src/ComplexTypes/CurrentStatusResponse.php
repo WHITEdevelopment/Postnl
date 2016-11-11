@@ -26,6 +26,7 @@ class CurrentStatusResponse extends BaseType
 
     /**
      * @param ArrayOfCurrentStatusResponseShipment $Shipments
+     *
      * @return CurrentStatusResponse
      */
     public function setShipments($Shipments)

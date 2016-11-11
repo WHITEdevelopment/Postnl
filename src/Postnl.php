@@ -53,7 +53,7 @@ class Postnl
      * @var array $clients
      *     An array with instantiated CIF clients.
      */
-    protected $clients = [];
+    protected $clients = array();
 
     /**
      * @var string $lastClient
@@ -65,37 +65,38 @@ class Postnl
      * @var string countryCodeMapping
      *     Maps the country code to the required barcode type.
      */
-    protected $countryCodeMapping = [
-        // Dutch domestic product.
-        'NL' => '3S',
-        // EPS products.
-        'AT' => '3S',
-        'BE' => '3S',
-        'BG' => '3S',
-        'CZ' => '3S',
-        'CY' => '3S',
-        'DK' => '3S',
-        'EE' => '3S',
-        'FI' => '3S',
-        'FR' => '3S',
-        'DE' => '3S',
-        'GB' => '3S',
-        'GR' => '3S',
-        'HU' => '3S',
-        'IE' => '3S',
-        'IT' => '3S',
-        'LV' => '3S',
-        'LT' => '3S',
-        'LU' => '3S',
-        'PL' => '3S',
-        'PT' => '3S',
-        'RO' => '3S',
-        'SK' => '3S',
-        'SI' => '3S',
-        'ES' => '3S',
-        'SE' => '3S',
-        // Everything else is GlobalPack.
-    ];
+    protected $countryCodeMapping
+        = array(
+            // Dutch domestic product.
+            'NL' => '3S',
+            // EPS products.
+            'AT' => '3S',
+            'BE' => '3S',
+            'BG' => '3S',
+            'CZ' => '3S',
+            'CY' => '3S',
+            'DK' => '3S',
+            'EE' => '3S',
+            'FI' => '3S',
+            'FR' => '3S',
+            'DE' => '3S',
+            'GB' => '3S',
+            'GR' => '3S',
+            'HU' => '3S',
+            'IE' => '3S',
+            'IT' => '3S',
+            'LV' => '3S',
+            'LT' => '3S',
+            'LU' => '3S',
+            'PL' => '3S',
+            'PT' => '3S',
+            'RO' => '3S',
+            'SK' => '3S',
+            'SI' => '3S',
+            'ES' => '3S',
+            'SE' => '3S',
+            // Everything else is GlobalPack.
+        );
 
     /**
      * @param string $customerNumber
@@ -105,7 +106,7 @@ class Postnl
      * @param string $password
      * @param string $collectionLocation
      * @param string $globalPack
-     * @param bool $sandbox
+     * @param bool   $sandbox
      */
     public function __construct(
         $customerNumber,
@@ -183,8 +184,9 @@ class Postnl
      *     Defaults to the customer number used to instantiate this object.
      * @param string $serie
      *     Defaults to the widest possible range.
-     * @param bool $eps
+     * @param bool   $eps
      *     Defaults to false (NL shipment).
+     *
      * @return ComplexTypes\GenerateBarcodeResponse
      *
      * @see BarcodeClient::generateBarcode()
@@ -197,14 +199,14 @@ class Postnl
         $eps = false
     ) {
         // Validate $type parameter.
-        if (!in_array($type, ['2S', '3S', 'CC', 'CP', 'CD', 'CF', 'CV'])) {
+        if (!in_array($type, array('2S', '3S', 'CC', 'CP', 'CD', 'CF', 'CV'))) {
             throw new Exceptions\InvalidBarcodeTypeException($type);
         }
 
         // Default customer code and number.
         if (!$customerCode) {
             // Use the separate Globalpack customer code for those shipments.
-            $customerCode = in_array($type, ['2S', '3S']) ? $this->customerCode : $this->globalPackCustomerCode;
+            $customerCode = in_array($type, array('2S', '3S')) ? $this->customerCode : $this->globalPackCustomerCode;
         }
         $customerNumber = $customerNumber ?: $this->customerNumber;
 
@@ -252,6 +254,7 @@ class Postnl
      *     Defaults to the customer number used to instantiate this object.
      * @param string $serie
      *     Defaults to the widest possible range.
+     *
      * @return ComplexTypes\GenerateBarcodeResponse
      *
      * @see BarcodeClient::generateBarcode()
@@ -277,6 +280,7 @@ class Postnl
 
     /**
      * @param ComplexTypes\ConfirmingMessage $confirmingMessage
+     *
      * @return ComplexTypes\ArrayOfConfirmingResponseShipment
      *
      * @see ConfirmingClient::confirming()
@@ -294,26 +298,29 @@ class Postnl
 
     /**
      * @param ComplexTypes\Shipment $shipment
-     * @param string $printerType
+     * @param string                $printerType
      *     The file type used to generate the label. Defaults to PDF.
-     * @param bool $confirm
+     * @param bool                  $confirm
      *     Defaults to true.
+     *
      * @return ComplexTypes\ResponseShipment
      *
      * @see LabellingClient::generateLabel()
      */
     public function generateLabel(ComplexTypes\Shipment $shipment, $printerType = 'GraphicFile|PDF', $confirm = true)
     {
-        $result = $this->generateLabels(new ComplexTypes\ArrayOfShipment([$shipment]), $printerType, $confirm);
+        $result = $this->generateLabels(new ComplexTypes\ArrayOfShipment(array($shipment)), $printerType, $confirm);
 
         // Return only the first shipment (there should be only 1).
-        return $result->getResponseShipments()[0];
+        $responseShipments = $result->getResponseShipments();
+        return $responseShipments[0];
     }
 
     /**
      * @param ComplexTypes\Shipment $shipment
-     * @param string $printerType
+     * @param string                $printerType
      *     The file type used to generate the label. Defaults to PDF.
+     *
      * @return ComplexTypes\ResponseShipment
      *
      * @see LabellingClient::generateLabelWithoutConfirm()
@@ -325,10 +332,11 @@ class Postnl
 
     /**
      * @param ComplexTypes\ArrayOfShipment $shipments
-     * @param string $printerType
+     * @param string                       $printerType
      *     The file type used to generate the label. Defaults to PDF.
-     * @param bool $confirm
+     * @param bool                         $confirm
      *     Defaults to true.
+     *
      * @return ComplexTypes\GenerateLabelResponse
      *
      * @see LabellingClient::generateLabel()
@@ -349,8 +357,9 @@ class Postnl
 
     /**
      * @param ComplexTypes\ArrayOfShipment $shipments
-     * @param string $printerType
+     * @param string                       $printerType
      *     The file type used to generate the label. Defaults to PDF.
+     *
      * @return ComplexTypes\GenerateLabelResponse
      *
      * @see LabellingClient::generateLabelWithoutConfirm()
@@ -364,6 +373,7 @@ class Postnl
 
     /**
      * @param string $barcode
+     *
      * @return CurrentStatusResponse
      *
      * @see ShippingStatusClient::currentStatus()
@@ -382,6 +392,7 @@ class Postnl
 
     /**
      * @param string $barcode
+     *
      * @return GetSignatureResponse
      *
      * @see ShippingStatusClient::getSignature()
@@ -399,10 +410,11 @@ class Postnl
     }
 
     /**
-     * @param $postalCode
-     * @param string $allowSundaySorting
+     * @param             $postalCode
+     * @param string      $allowSundaySorting
      * @param null|string $deliveryDate
-     * @param string $countryCode
+     * @param string      $countryCode
+     *
      * @return ComplexTypes\GetNearestLocationsResponse
      */
     public function getNearestLocation(
@@ -421,11 +433,12 @@ class Postnl
     /**
      * @param string $postalCode
      * @param string $houseNumber
-     * @param array $options
+     * @param array  $options
      * @param string $startDate
      * @param string $endDate
      * @param string $countryCode
      * @param string $allowSundaySorting
+     *
      * @return ComplexTypes\GetTimeframesResponse
      * @throws ComplexTypes\CifException
      * @throws SoapFault
@@ -433,7 +446,7 @@ class Postnl
     public function getTimeframes(
         $postalCode,
         $houseNumber,
-        $options = ['Daytime'],
+        $options = array('Daytime'),
         $startDate = null,
         $endDate = null,
         $countryCode = 'NL',
@@ -454,21 +467,22 @@ class Postnl
     }
 
     /**
-     * @param string $postalCode
+     * @param string                         $postalCode
      * @param ComplexTypes\ArrayOfCutOffTime $cutOffTimes
-     * @param string $shippingDate
-     * @param int $shippingDuration
-     * @param string[] $options
-     * @param string $allowSundaySorting
-     * @param string $countryCode
+     * @param string                         $shippingDate
+     * @param int                            $shippingDuration
+     * @param string[]                       $options
+     * @param string                         $allowSundaySorting
+     * @param string                         $countryCode
+     *
      * @return ComplexTypes\GetDeliveryDateResponse
      */
     public function getDeliveryDate(
         $postalCode,
-        ArrayOfCutOffTime $cutOffTimes,
+        ComplexTypes\ArrayOfCutOffTime $cutOffTimes,
         $shippingDate,
         $shippingDuration = 1,
-        $options = ['Daytime'],
+        $options = array('Daytime'),
         $allowSundaySorting = 'false',
         $countryCode = 'NL'
     ) {
@@ -491,8 +505,9 @@ class Postnl
     /**
      * Returns location information of the supplied location code.
      *
-     * @param string $locationCode LocationCode information.
+     * @param string $locationCode    LocationCode information.
      * @param string $retailNetworkId PNPNL-01 is the code that can be used for all Dutch locations.
+     *
      * @return ComplexTypes\GetLocationsResponse
      */
     public function getLocation($locationCode, $retailNetworkId = 'PNPNL-01')
@@ -521,13 +536,14 @@ class Postnl
         $responseXml->loadXML($this->getClient($this->lastClient)->__getLastResponse());
         $responseXml->formatOutput = true;
 
-        return ['request' => $requestXml->saveXML(), 'response' => $responseXml->saveXML()];
+        return array('request' => $requestXml->saveXML(), 'response' => $responseXml->saveXML());
     }
 
     /**
      * Get CIF client by name. Takes care of instantiating clients if needed.
      *
      * @param string $clientName
+     *
      * @return mixed
      */
     protected function getClient($clientName)
@@ -549,7 +565,7 @@ class Postnl
      *
      * @param string $clientName
      * @param string $method
-     * @param mixed $parameter
+     * @param mixed  $parameter
      *
      * @throws ComplexTypes\CifException
      */
@@ -562,10 +578,10 @@ class Postnl
                 // This SoapFault was generated by the CIF service.
 
                 // Assemble exception data from the response.
-                $exceptionData = [];
+                $exceptionData = array();
                 $errors = $exception->detail->CifException->Errors->ExceptionData;
                 // Make sure `$errors` is an array.
-                $errors = is_array($errors) ? $errors : [$errors];
+                $errors = is_array($errors) ? $errors : array($errors);
                 foreach ($errors as $error) {
                     $exceptionData[] = ComplexTypes\ExceptionData::create()
                         ->setDescription($error->Description)

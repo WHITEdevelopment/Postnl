@@ -54,16 +54,16 @@ class GetSentDate extends BaseType
     protected $Street = null;
 
     /**
-     * @param string $AllowSundaySorting
-     * @param string $City
-     * @param string $CountryCode
-     * @param string $DeliveryDate
-     * @param string $HouseNr
-     * @param string $HouseNrExt
+     * @param string   $AllowSundaySorting
+     * @param string   $City
+     * @param string   $CountryCode
+     * @param string   $DeliveryDate
+     * @param string   $HouseNr
+     * @param string   $HouseNrExt
      * @param string[] $Options
-     * @param string $PostalCode
-     * @param string $ShippingDuration
-     * @param string $Street
+     * @param string   $PostalCode
+     * @param string   $ShippingDuration
+     * @param string   $Street
      */
     public function __construct(
         $AllowSundaySorting,
@@ -99,6 +99,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $AllowSundaySorting
+     *
      * @return GetSentDate
      */
     public function setAllowSundaySorting($AllowSundaySorting)
@@ -117,6 +118,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $City
+     *
      * @return GetSentDate
      */
     public function setCity($City)
@@ -135,6 +137,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $CountryCode
+     *
      * @return GetSentDate
      */
     public function setCountryCode($CountryCode)
@@ -153,6 +156,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $DeliveryDate
+     *
      * @return GetSentDate
      */
     public function setDeliveryDate($DeliveryDate)
@@ -171,6 +175,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $HouseNr
+     *
      * @return GetSentDate
      */
     public function setHouseNr($HouseNr)
@@ -189,6 +194,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $HouseNrExt
+     *
      * @return GetSentDate
      */
     public function setHouseNrExt($HouseNrExt)
@@ -207,6 +213,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string[] $Options
+     *
      * @return GetSentDate
      */
     public function setOptions($Options)
@@ -225,6 +232,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $PostalCode
+     *
      * @return GetSentDate
      */
     public function setPostalCode($PostalCode)
@@ -243,6 +251,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $ShippingDuration
+     *
      * @return GetSentDate
      */
     public function setShippingDuration($ShippingDuration)
@@ -261,6 +270,7 @@ class GetSentDate extends BaseType
 
     /**
      * @param string $Street
+     *
      * @return GetSentDate
      */
     public function setStreet($Street)

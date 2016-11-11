@@ -31,6 +31,7 @@ class ArrayOfResponseProductOption extends BaseArrayOfType
 
     /**
      * @param ResponseProductOption[] $ResponseProductOption
+     *
      * @return ArrayOfResponseProductOption
      */
     public function setResponseProductOption(array $ResponseProductOption)
