@@ -9,9 +9,7 @@
     }
   ],
   "require": {
-    "php": ">5.3",
-    "ext-soap": "*",
-    "ext-dom": "*"
+    "php": ">5.3"
   },
   "autoload": {
     "psr-4": {
