@@ -8,11 +8,11 @@ abstract class BaseType
     /**
      * Create a class instance statically without calling the constructor.
      *
-     * @return $this
+     * @return object
      */
     public static function create()
     {
         $reflection = new ReflectionClass(get_called_class());
-        return $reflection->newInstanceWithoutConstructor();
+        return $reflection->newInstance();
     }
 }
