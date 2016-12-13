@@ -1,7 +1,5 @@
 <?php namespace DivideBV\Postnl\ComplexTypes;
 
-use ReflectionClass;
-
 abstract class BaseType
 {
 
@@ -12,7 +10,12 @@ abstract class BaseType
      */
     public static function create()
     {
-        $reflection = new ReflectionClass(get_called_class());
-        return $reflection->newInstance();
+        $className = get_called_class();
+
+        $object = unserialize(
+            sprintf('O:%d:"%s":0:{}', strlen($className), $className)
+        );
+
+        return $object;
     }
 }
