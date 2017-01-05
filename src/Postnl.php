@@ -503,6 +503,39 @@ class Postnl
     }
 
     /**
+     * @param string   $postalCode
+     * @param string   $deliveryDate
+     * @param int      $shippingDuration
+     * @param string[] $options
+     * @param string   $allowSundaySorting
+     * @param string   $countryCode
+     *
+     * @return ComplexTypes\GetSentDateResponse
+     */
+    public function getSentDate(
+        $postalCode,
+        $deliveryDate,
+        $shippingDuration = 1,
+        $options = array('Daytime'),
+        $allowSundaySorting = 'false',
+        $countryCode = 'NL'
+    ) {
+        $GetDeliveryDate = ComplexTypes\GetSentDate::create()
+            ->setPostalCode($postalCode)
+            ->setDeliveryDate($deliveryDate)
+            ->setShippingDuration($shippingDuration)
+            ->setOptions($options)
+            ->setAllowSundaySorting($allowSundaySorting)
+            ->setCountryCode($countryCode);
+
+        $message = new ComplexTypes\Message;
+        $request = new ComplexTypes\GetSentDateRequest($message, $GetDeliveryDate);
+
+        // Query the webservice and return the result.
+        return $this->call('DeliveryDateClient', __FUNCTION__, $request);
+    }
+
+    /**
      * Returns location information of the supplied location code.
      *
      * @param string $locationCode    LocationCode information.
