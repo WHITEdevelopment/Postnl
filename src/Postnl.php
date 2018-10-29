@@ -102,8 +102,7 @@ class Postnl
      * @param string $customerNumber
      * @param string $customerCode
      * @param string $customerName
-     * @param string $username
-     * @param string $password
+     * @param string $apikey
      * @param string $collectionLocation
      * @param string $globalPack
      * @param bool   $sandbox
