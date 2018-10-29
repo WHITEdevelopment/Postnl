@@ -42,15 +42,15 @@ abstract class BaseClient extends SoapClient
             $wsdl = $sandbox ? static::SANDBOX_WSDL : static::PRODUCTION_WSDL;
         }
 
-        parent::__construct($wsdl, [
+        parent::__construct($wsdl, array(
             'classmap' => $this->getClassmap(),
             'trace' => true,
-            'stream_context' => stream_context_create([
-                'http' => [
+            'stream_context' => stream_context_create(array(
+                'http' => array(
                     'header' => "apikey: $apikey"
-                ],
-            ]),
-        ]);
+                ),
+            )),
+        ));
     }
 
     /**
