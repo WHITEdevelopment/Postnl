@@ -120,6 +120,7 @@ class Postnl
         $this->customerNumber = $customerNumber;
         $this->customerCode = $customerCode;
         $this->customerName = $customerName;
+        $this->apikey = $apikey;
         $this->collectionLocation = $collectionLocation;
         $this->globalPackBarcodeType = preg_filter('/^(.{2})(.{4})$/', '$1', $globalPack);
         $this->globalPackCustomerCode = preg_filter('/^(.{2})(.{4})$/', '$2', $globalPack);
